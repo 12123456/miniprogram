@@ -1,0 +1,72 @@
+<view class="hr"></view>
+<view class="product-boxs">
+  <image mode="scaleToFill" src="/image/order/shop-img.png"/>
+  <view class="product-info">
+    <view class="product-name">联想(Lenovo)天逸510S 酷睿版 英特尔酷睿i5 台式机电脑整机(i5-10400）</view>
+    <view class="product-specification">规格:黑i5/8GB/320G机械</view>
+    <view class="product-price">总租金:￥90</view>
+  </view>
+</view>
+<view class="xuzu-days">
+  <view class="days-row">
+    <text>续租天数</text>
+  </view>
+  <view class="days-row">
+    <text>租用天数</text>
+    <view>
+      <input placeholder-class="placeholder-days" onInput="daysFun" placeholder="请输入天数" />
+      <text>天</text>
+    </view>
+  </view>
+</view>
+<view class="lease-details" a:if="{{!showDetails}}">
+  <view class="days-row">
+    <text>续租订单详情</text>
+  </view>
+  <view class="days-row gray">
+    <text>还租时间</text>
+    <text>2021/02/22-2021/06/13</text>
+  </view>
+  <view class="days-row">
+    <text>总租金</text>
+    <text>￥66.00</text>
+  </view>
+  <view class="days-row gray">
+    <text>优惠券</text>
+    <text>0.00</text>
+  </view>
+  <view class="days-row redView">
+    <text>会员权益</text>
+    <text>0.00</text>
+  </view>
+  <view class="days-row gray">
+    <text>增值服务</text>
+    <text>￥0.00</text>
+  </view>
+  <view class="days-row">
+    <text>首期应付</text>
+    <text>￥66.00</text>
+  </view>
+  <view class="days-row gray">
+    <text>剩余还款计划</text>
+    <text>￥0.00X0</text>
+  </view>
+</view>
+<view class="leave-message">
+  <text>买家留言:</text>
+  <input placeholder-class="placeholder-leave" placeholder="请在这里留下您的备注" />
+</view>
+<view class="protocol">
+支付即同意
+  <text>《租赁及服务相关协议》</text>
+</view>
+<view class="operting-boxs">
+  <view class="left">
+实付
+    <text>￥
+      <text>66.00</text></text>
+  </view>
+  <view class="pay-btn">
+确认并支付
+  </view>
+</view>

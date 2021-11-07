@@ -1,0 +1,34 @@
+<view class="addressOption">
+  <notice mode="closable" onClick="closableClick" show="{{closeShow}}" enableMarquee="{{true}}" marqueeProps="{{loop: true, leading: 500, trailing: 800, fps: 40 }}">若所在省市无法选择，请在省市区选择其他再详细地址输入即可</notice>
+  <view class="form">
+    <view class="form-item">
+        <input placeholder="收货人" value="{{userName}}" onBlur="userNameBlur" class="input" />
+    </view>
+    <view class="form-item">
+        <input placeholder="手机号码" onBlur="userTelBlur" class="input" type="number" />
+    </view>
+    <view class="form-item">
+      <picker-item
+        class="chooseAddress"
+        placeholder="所在地区"
+        value="{{address}}"
+        onPickerTap="onPickerTap"
+      >
+      </picker-item>
+    </view>
+    <view class="form-item-detail">
+      <textarea placeholder="详细地址" onBlur="addressDetailBlur" auto-height="{{true}}" />
+    </view>
+    <view class="form-item">
+      <view class="form-item-title">
+        设为默认地址
+      </view>
+      <switch onChange="switchChange"/>
+    </view>
+  </view>
+  <view a:if="{{!haveDelete}}" class="save-btn" onTap="saveClick">保存</view>
+  <view a:if="{{haveDelete}}" class="option-save-btn">
+    <view class="save">保存</view>
+    <view class="delete">删除</view>
+  </view>
+</view>

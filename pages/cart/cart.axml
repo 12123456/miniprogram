@@ -1,0 +1,80 @@
+<view class="page">
+  <view class="background">
+    <image mode="scaleToFill" src="../../image/cartBackground.png"/>
+  </view>
+  <scroll-view scroll-y="true" class="allScroll">
+    <view class="quota">
+      <view class="quotaContent">暂无信用额度</view>
+    </view>
+    <view class="goods">
+      <block a:for="{{goodsList}}">
+        <view class="goodsEvery">
+          <view class="title">
+            <view class="titleLeft">
+              <view class="titleChoose" onTap="selectGoods" data-index="{{index}}">
+                <image a:if="{{!item.select}}" mode="scaleToFill" src="../../image/unselected.png"/>
+                <image a:if="{{item.select}}" mode="scaleToFill" src="../../image/selected.png"/>
+              </view>
+              <view class="titleText">{{item.company}}</view>
+            </view>
+            <view class="titleRight">
+              <am-icon type="delete" size="3px" />
+            </view>
+          </view>
+          <view class="content">
+            <view class="contentChoose" onTap="selectGoods" data-index="{{index}}">
+              <image a:if="{{!item.select}}" mode="scaleToFill" src="../../image/unselected.png"/>
+              <image a:if="{{item.select}}" mode="scaleToFill" src="../../image/selected.png"/>
+            </view>
+            <view class="contentImg">
+              <image mode="scaleToFill" src="../../image/test03.png"/>
+            </view>
+            <view class="contentText">
+              <view class="contentTitle">
+                {{item.title}}
+              </view>
+              <view class="contentDes">
+                {{item.dec}}
+              </view>
+            </view>
+          </view>
+          <view class="options">
+            <view class="money">
+              ￥233.00
+            </view>
+            <view class="time">
+              12期
+            </view>
+            <view class="number">
+              <view class="stepper">
+                <view class="stepperSubtract" onTap="stepperSubtract">-</view>
+                <view class="stepperContent">{{stepperNum}}</view>
+                <view class="stepperAdd" onTap="stepperAdd">+</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class="nothing-tips">————————我是有底线的————————</view>
+  </scroll-view>
+  <view class="foot">
+    <view class="footLeft">
+      <view class="allChoose" onTap="selectAll">
+        <image a:if="{{!selectAllCheck}}" mode="scaleToFill" src="../../image/unselected.png"/>
+        <image a:if="{{selectAllCheck}}" mode="scaleToFill" src="../../image/selected.png"/>
+      </view>
+      <view class="selectAll">
+        全选
+      </view>
+    </view>
+    <view class="footRight">
+      <view class="allMoney">
+        合计:￥{{allMoney}}
+      </view>
+      <view class="settlement">
+        结算({{selectNum}})
+      </view>
+    </view>
+  </view>
+</view>

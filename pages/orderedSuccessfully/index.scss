@@ -1,0 +1,205 @@
+page {
+    background-color: #f0f0f0;
+    padding-bottom: 150rpx;
+
+    .header {
+        background: url('../../image/order/icon6.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 280rpx;
+        padding: 50rpx 30rpx 0;
+        box-sizing: border-box;
+
+        .status-top {
+            display: flex;
+            align-items: center;
+
+            image {
+                width: 39rpx;
+                height: 39rpx;
+            }
+
+            text {
+                margin-left: 17rpx;
+                font-size: 37rpx;
+                font-family: PingFang SC;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+        }
+
+        .tips {
+            margin-top: 28rpx;
+            font-size: 28rpx;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.4);
+            padding-left: 54rpx;
+            box-sizing: border-box;
+        }
+    }
+
+    .main {
+        padding: 0 30rpx;
+        box-sizing: border-box;
+        margin-top: -56rpx;
+
+        .operting {
+            padding: 0 55rpx;
+            box-sizing: border-box;
+            height: 145rpx;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFF;
+            border-radius: 10rpx;
+
+            text {
+                display: inline-block;
+                text-align: center;
+                width: 280rpx;
+                height: 68rpx;
+                line-height: 68rpx;
+                font-size: 32rpx;
+                font-family: PingFang SC;
+                font-weight: bold;
+                color: #F83A44;
+                border: 1px solid #F83445;
+                border-radius: 5rpx;
+            }
+
+            text:last-child {
+                background: linear-gradient(90deg, #FA5C3A 0%, #F83445 100%);
+                border-radius: 5rpx;
+                color: #FEFEFE;
+            }
+        }
+
+        .user-info-box {
+            margin-top: 28rpx;
+            background-color: #FFF;
+            border-radius: 10rpx;
+
+            .title {
+                font-size: 28rpx;
+                font-family: PingFang SC;
+                font-weight: bold;
+                color: #212121;
+                height: 80rpx;
+                line-height: 80rpx;
+                position: relative;
+                padding-left: 30rpx;
+                box-sizing: border-box;
+
+                &::after {
+                    position: absolute;
+                    content: ' ';
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1rpx;
+                    background: #E0E0E0;
+                }
+            }
+
+            .boxs-row {
+                padding: 28rpx 30rpx 30rpx;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .row-item {
+                    display: flex;
+
+                    image {
+                        width: 75rpx;
+                        height: 75rpx;
+                    }
+
+                    .item-right {
+                        flex: 1;
+                        margin-left: 24rpx;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            content: ' ';
+                            right: 0;
+                            width: 14rpx;
+                            height: 22rpx;
+                            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAQAAABXnf4jAAAAAXNSR0IArs4c6QAAAHRJREFUGBkFwS0SQQEABsBNfucNV6EQKBQSifxuZNyFQqEQuApjGIPy2YWVBQBQiq8ZAFRtxccEAOr24m0EAE1H8TQAgMJZPPQAoO0qbjoAtFzEXRegcBIPfYCGg3gZAtTsxNsYoGIjPqYAlOJnDgCsLQHgDzkTJPRjJR71AAAAAElFTkSuQmCC');
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                        }
+
+                        view {
+                            font-size: 24rpx;
+                            font-family: PingFang SC;
+                            font-weight: 500;
+                            color: rgba(33, 33, 33, 0.6);
+
+                        }
+
+                        .row-title {
+                            color: #212121;
+                            font-size: 28rpx;
+                            font-weight: bold;
+                        }
+
+                        .mt15 {
+                            margin-top: 15rpx;
+                        }
+
+                        .color-red {
+                            color: #F93946;
+                        }
+                    }
+                }
+
+                .row-item:nth-child(2) {
+                    margin-top: 52rpx;
+
+                    .item-right {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .price-info {
+            margin: 28rpx 0;
+            background-color: #FFF;
+            border-radius: 10rpx;
+
+            .buyout-row:last-child {
+                font-size: 24rpx;
+                font-family: PingFang SC;
+                font-weight: 500;
+                color: rgba(33, 33, 33, 0.5);
+            }
+        }
+
+        .buyout-row {
+            height: 100rpx;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFF;
+            border-radius: 10rpx;
+            padding: 0 28rpx;
+            box-sizing: border-box;
+            font-size: 24rpx;
+            font-family: PingFang SC;
+            font-weight: bold;
+            color: #212121;
+        }
+    }
+}

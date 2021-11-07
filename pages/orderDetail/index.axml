@@ -1,0 +1,85 @@
+<view class="logistics-dynamics">
+  <view class="top">
+    <image mode="scaleToFill" src="/image/order/icon3.png"/>
+    <text>待商家发货</text>
+  </view>
+  <view class="bottom">商品租用到期归还后，冻结预授权金额将会释放</view>
+</view>
+<view class="address-box">
+  <image mode="scaleToFill" src="/image/order/icon5.png"/>
+  <view class="right">
+    <view class="user-info">
+      <text>洪克</text>
+      <text>152****1108</text>
+    </view>
+    <view class="address-name">北京市海定区上地大厦</view>
+  </view>
+</view>
+<view class="shop-box">
+  <view class="shop-info">
+    <image mode="scaleToFill" src="/image/goodsDetails/shop-logo.png"/>
+    <view class="shop-name">全民租机旗舰店</view>
+  </view>
+  <view class="product">
+    <image mode="scaleToFill" src="/image/order/shop-img.png"/>
+    <view class="right-info">
+      <view class="product-name">联想(Lenovo)天逸510S 酷睿版 英特尔酷睿i5 台式机电脑整机(i5-10400）</view>
+      <view class="product-specification">规格:黑i5/8GB/320G机械</view>
+      <view class="price">总租金:￥90</view>
+      <view class="credit">
+        <text>芝麻信用-免押金</text>
+        <text>申请退款</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="lease-term-box">
+  <view class="top-box">
+    <view class="row-item black">
+      <text>第一期租金</text>
+      <text>￥66.00</text>
+    </view>
+    <view class="row-item gray">
+      <text>运费</text>
+      <text>到付</text>
+    </view>
+    <view class="row-item gray">
+      <text>安心服务</text>
+      <text>￥0.00</text>
+    </view>
+    <view class="row-item black">
+      <text>首期实付款</text>
+      <text>￥66.00</text>
+    </view>
+  </view>
+  <view class="bottom-box">
+    <view>
+      <text>合计支付</text>
+      <text>￥66.00</text>
+    </view>
+    <view>
+      <text>到期买断价</text>
+      <text>￥1790.00</text>
+    </view>
+  </view>
+</view>
+<view class="order-info">
+  <view class="orider-item">
+    <view class="title">订单编号</view>
+    <view class="right">1234567891243456464664
+      <text>复制</text></view>
+  </view>
+  <view class="orider-item">
+    <view class="title">下单时间</view>
+    <view class="right">2021年12月25日 13：24</view>
+  </view>
+  <view class="orider-item">
+    <view class="title">下单时间</view>
+    <view class="right">2021/02/22-2021/06/13</view>
+  </view>
+</view>
+<view class="protocol">《租赁及服务相关协议》</view>
+<view class="operting">
+  <text>联系客服</text>
+  <text>分期账单</text>
+</view>

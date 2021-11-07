@@ -1,0 +1,12 @@
+{
+  "defaultTitle": "商品详情",
+  "usingComponents":{
+    "list": "mini-antui/es/list/index",
+    "list-item": "mini-antui/es/list/list-item/index",
+    "am-icon": "mini-antui/es/am-icon/index",
+    "tabs": "mini-antui/es/tabs/index",
+    "tab-content": "mini-antui/es/tabs/tab-content/index",
+    "popup": "mini-antui/es/popup/index",
+    "calendar": "mini-antui/es/calendar/index"
+  }
+}

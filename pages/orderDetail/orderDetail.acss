@@ -1,0 +1,273 @@
+.orderDetail {
+  background-color: #fff;
+  width: 100%;
+  font-size: 25rpx;
+}
+
+.pageTopTips {
+  text-indent:30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: coral;
+  background-color: khaki;
+  width: 100%;
+}
+
+.process {
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.stepEvery {
+  width: 180rpx;
+
+}
+
+.stepEvery image {
+  width: 100%;
+  height: 90rpx;
+  margin-bottom: 10rpx;
+}
+
+.stepTitle {
+  width: 100%;
+  text-align: center;
+}
+
+.stepMes {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50rpx;
+}
+
+.stepMes-tips {
+  width: 100%;
+  text-align: center;
+  color: darkorange;
+  margin-top: 10rpx;
+}
+
+.color-grey {
+  color: #737373;
+}
+
+.logistics-Mes {
+  border-radius: 20rpx;
+  width: 90%;
+  margin: 20rpx auto;
+  border: 1rpx solid #e6e6e6;
+  padding: 20rpx;
+}
+
+.logistics-title {
+  font-weight: bold;
+}
+
+.logistics-top {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logistics-top-left {
+  height: 70rpx;
+  display: flex;
+}
+
+.logistics-top-left image {
+  width:70rpx;
+  height: 70rpx;
+}
+
+.logistics-top-content {
+  margin-left: 10rpx;
+  width: 550rpx;
+  height: 70rpx;
+  color: #737373;
+}
+
+.logistics-top-content-top {
+  height: 35rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.logistics-top-content-bottom {
+  height: 35rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  display:table-cell; 
+  vertical-align:bottom;
+}
+
+.logistics-top-icon {
+  margin: auto 0;
+}
+
+.logistics-bottom {
+  margin-top: 40rpx;
+  display: flex;
+}
+
+.logistics-bottom image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.logistics-bottom-content {
+  width: 550rpx;
+  margin-left: 10rpx;
+  height: 70rpx;
+}
+
+.logistics-bottom-content-top {
+  height: 35rpx;
+}
+
+.logistics-bottom-content-bottom {
+  height: 35rpx;
+  color: #737373;
+  display:table-cell; 
+  vertical-align:bottom;
+}
+
+.goods-mes {
+  width: 90%;
+  margin: 0 auto;
+  border: 1rpx solid #e6e6e6;
+  padding: 20rpx;
+  border-radius: 20rpx;
+}
+
+.goods-mes-title {
+  display: flex;
+  font-size: 30rpx;
+}
+
+.goods-mes-title image {
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.goods-mes-company {
+  margin-left: 5rpx;
+}
+
+.goods-mes-toName {
+  margin-left: 40rpx;
+}
+
+.goods-mes-content {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods-mes-content image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.goods-mes-content-middle {
+
+}
+
+.goods-mes-middle-title {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  height: 50rpx;
+  width: 500rpx;
+}
+
+.goods-mes-middle-price {
+  color: darkorange;
+}
+
+.goods-price {
+  border-radius: 20rpx;
+  width: 90%;
+  margin: 20rpx auto;
+  border: 1rpx solid #e6e6e6;
+  padding: 20rpx;
+}
+
+.goods-allPrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods-freight {
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.allPrice {
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.font-weight {
+  font-weight: bold;
+}
+
+.goods-price-bottom {
+  margin-top: 50rpx;
+
+}
+
+.contact-btn {
+  margin: 0 auto;
+  border: 1rpx solid black;
+  width: 150rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.order-mes {
+  border-radius: 20rpx;
+  width: 90%;
+  margin: 0 auto 50rpx auto;
+  border: 1rpx solid #e6e6e6;
+  padding: 20rpx;
+}
+
+.order-mes-title {
+  font-weight: bold;
+  font-size: 27rpx;
+}
+
+.order-mes-content {
+  margin-top: 10rpx;
+}
+
+.order-every {
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.order-code-content {
+  display: flex;
+
+}
+
+.copy-btn {
+  margin-left: 10rpx;
+  border: 1rpx solid black;
+  border-radius: 15rpx;
+  width: 80rpx;
+  text-align: center;
+
+}

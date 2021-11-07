@@ -1,0 +1,77 @@
+page {
+  background-color: #fff;
+}
+
+.addressOption {
+  font-size: 30rpx;
+}
+
+.form {
+  padding: 0 30rpx;
+}
+
+.form-item {
+  line-height: 100rpx;
+  height: 100rpx;
+  width: 100%;
+  color: #737373;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+
+.input {
+  margin: auto 0;
+  width: 100%;
+}
+
+.chooseAddress {
+  width: 100%;
+  padding: 0!important;
+}
+
+.form-item-detail {
+  width: 100%;
+  color: #737373;
+  margin-top: 30rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+
+.save-btn {
+  margin:100rpx auto 0;
+  width: 500rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  background-color: red;
+  text-align: center;
+  border-radius: 50rpx;
+}
+
+.option-save-btn {
+  margin-top: 100rpx;
+  width: calc(100% - 200rpx);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100rpx;
+}
+
+.save {
+  width: 250rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  background-color: red;
+  text-align: center;
+  border-radius: 50rpx;
+}
+
+.delete {
+  width: 250rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: red;
+  border: 1rpx solid red;
+  text-align: center;
+  border-radius: 50rpx;
+}

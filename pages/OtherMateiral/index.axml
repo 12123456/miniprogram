@@ -1,0 +1,18 @@
+<view class="page" style="height:{{windowHeight}}px">
+  <view class="row row1">
+    <view class="title-container">
+      <view class="official-title">上传您的其他相关材料证明</view>
+      <view class="subheading">正面为头像面 反面为国徽面</view>
+    </view>
+    <view class="photo-container">
+      <view class="photo">
+        <view class="icon"></view>
+        <view class="text">最多三张</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="row row4">
+    <button class="submit">提交</button>
+  </view>
+</view>

@@ -1,0 +1,372 @@
+.page {
+  background: #f2f2f2;
+  width: 100%;
+  height: 100%;
+}
+
+form{
+  height: 1190rpx;
+  width: 100%;
+}
+/* 上面 start */
+.top {
+  background-position: center;
+  background-image: url(../../image/top_background.png);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  width: calc(100%-60rpx);
+  height: 240rpx;
+  background-color: #fff;
+  padding: 20rpx 35rpx;
+}
+
+.top-up {
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 60rpx;
+}
+
+.top-left {
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  color: #fff;
+}
+
+.balance {
+  margin-top: 10rpx;
+  font-size: 25rpx;
+  color: #737373;
+}
+
+.top-right {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100rpx;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-right image {
+  width: 100%;
+  height: 100%;
+}
+
+.top-down {
+  text-align: center;
+  margin-top: 20rpx;
+  padding: 0 120rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.equipmentNum,.totalNum,.rzseType {
+  font-size: 25rpx;
+  color: #737373;
+}
+
+/*收货地址*/
+.toAddress {
+  height: 40rpx;
+  color: #737373;
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  line-height: 40rpx;
+}
+
+.toAddressIcon {
+  margin: auto 0;
+}
+
+
+/* 中间 start */
+.middle {
+  width: 100%;
+  height: 300rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  font-size: 25rpx;
+  color: #737373;
+}
+
+.control-m-Img {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 0 auto;
+}
+
+.control-m-Img image{
+  width: 100%;
+  height: 100%;
+}
+
+.middle-up {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+
+.orderAll, .waitCollection, .waitSend {
+  border-right: 1rpx solid #e6e6e6;
+}
+
+.orderAll, .waitCollection, .waitSend, .waitReceive {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10rpx;
+}
+
+.middle-down {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+.using, .successed, .overdue {
+  border-right: 1rpx solid #e6e6e6;
+}
+
+.using, .successed, .overdue, .returnGoods {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding-top: 5rpx;
+}
+
+/*物流信息*/
+.me-step {
+  margin-top: 20rpx;
+  width: calc(100% - 40rpx);
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+  font-size: 27rpx;
+}
+
+.step-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-top-time {
+  color: #737373;
+}
+
+.step-content {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.step-content image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.step-content-right {
+  height: 80rpx;
+  margin-left: 10rpx;
+}
+
+.step-content-top {
+  color: rgb(16, 142, 233);
+  height: 35rpx;
+  line-height: 35rpx;
+}
+
+.step-content-bottom {
+  color: #737373;
+  margin-top: 10rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  height: 35rpx;
+  line-height: 35rpx;
+  width: 550rpx;
+}
+
+/* 广告 */
+.me-ad {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 150rpx;
+}
+
+.me-ad image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 下面 start */
+.bottom {
+  text-align: center;
+  padding: 40rpx 100rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  width: calc(100%-200rpx);
+  font-size: 25rpx;
+}
+
+.control-b-Img {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 0 auto;
+}
+
+.control-b-Img image {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-up {
+  height: 33%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-middle {
+  margin-top: 20rpx;
+  height: 33%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-bottom {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height: 33%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*客服弹窗*/
+.modalService {
+  border-radius: 20rpx;
+  width: 400rpx;
+}
+
+.modal-service-title {
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+
+.modal-service-tel {
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+
+.color-blue {
+  color: rgb(16, 142, 233);
+}
+
+.modal-service-time {
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+
+.close-btn {
+  width: 180rpx;
+  height: 50rpx;
+  font-size: 28rpx;
+  border-radius: 25rpx;
+  border: 1rpx solid rgb(16, 142, 233);
+  line-height: 50rpx;
+  text-align: center;
+  color: rgb(16, 142, 233);
+  margin: 30rpx auto 50rpx auto;
+}
+
+.good-grid {
+  width: 750rpx;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  background-color: #EBEBEB;
+}
+
+.good-grid .b {
+  width: 750rpx;
+  height: auto;
+  overflow: hidden;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.good-grid .b .item {
+  display: block;
+  float: left;
+  width: 345rpx;
+  margin-bottom: 30rpx;
+  height: auto;
+  overflow: hidden;
+  background-color: #FFF;
+  border-radius: 16rpx;
+}
+
+.good-grid .b .item:nth-child(2n + 1) {
+  margin-right: 20rpx;
+}
+.good-grid .b .item .description{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  padding: 0 10rpx;
+}
+
+.good-grid .item .img {
+  width: 345rpx;
+  height: 345rpx;
+}
+
+.good-grid .item .name {
+  width: 100%;
+  overflow: hidden;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.good-grid .item .price {
+  width: 100%;
+  height: 46rpx;
+  line-height: 46rpx;
+  font-size: 30rpx;
+  color: #ff5d68;
+  padding: 0 10rpx;
+}
+
+.good-grid .h {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 130rpx;
+  font-size: 33rpx;
+  color: #333;
+}
+
+.good-grid .h .leftStar,
+.good-grid .h .rightStar{
+  width: 112rpx;
+  height: 44rpx;
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.good-grid .h .text{
+  line-height:54rpx;
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,83 @@
+<view class="order">
+  <tabs tabs="{{tabs}}" tabsName="activeTab" onTabClick="handleTabClick" tabBarUnderlineColor="#FD5C51" tabBarInactiveTextColor="#0A0A0B" tabBarActiveTextColor="#FD5C51" onChange="handleTabChange" activeTab="{{activeTab}}">
+    <block a:for="{{tabs}}">
+      <tab-content key="{{index}}">
+        <view class="tab-content">
+          <scroll-view a:if="{{item.list.length>0}}" class="content-scroll" scroll-y="{{true}}">
+            <block a:for="{{item.list}}">
+              <view class="every-content">
+                <view class="content-top" onTap="toOrderDetail">
+                  <view class="top-left">
+                    <image mode="scaleToFill" src="{{item.companyLogo}}"/>
+                    <view class="top-left-title">{{item.company}}</view>
+                  </view>
+                  <view class="top-right">
+                  用户取消订单  买断
+                  </view>
+                </view>
+                <view class="content-middle" onTap="toOrderDetail">
+                  <image mode="scaleToFill" src="{{item.goodsImg}}"/>
+                  <view class="middle-right">
+                    <view class="middle-right-title">
+                    {{item.goodsTitle}}
+                    </view>
+                    <view class="middle-right-dec">
+                    {{item.goodsDec}}
+                    </view>
+                  </view>
+                </view>
+                <view class="all-price">
+                 总租金:￥90.
+                  <text>00</text>
+                </view>
+                <view class="content-bottom" a:if="{{activeTab===1}}">
+                  <view class="middle-btn">取消订单</view>
+                  <view class="middle-btn">去付款</view>
+                </view>
+                <view class="content-bottom" a:if="{{activeTab===2}}">
+                  <view class="middle-btn" onTap="toRoderStaging">分期账单</view>
+                  <view class="link-btn">联系客服</view>
+                </view>
+                <view class="content-bottom" a:if="{{activeTab===3}}">
+                  <view class="middle-btn" onTap="toRoderStaging">分期账单</view>
+                  <view class="middle-btn" onTap="toSteps">查看物流</view>
+                  <view class="last-btn" onTap="toComment">确认收货</view>
+                </view>
+                <view class="content-bottom" a:if="{{activeTab===4}}">
+                  <view class="middle-btn" onTap="xuzuFun">续租</view>
+                  <view class="middle-btn" onTap="toReturnItem">归还</view>
+                  <view class="middle-btn" onTap="toRoderStaging">分期账单</view>
+                  <view class="middle-btn" onTap="buyOutFun">买断</view>
+                  <view class="link-btn">联系客服</view>
+                </view>
+                <view class="content-bottom" a:if="{{activeTab===5}}">
+                  <view class="middle-btn" onTap="xuzuFun">续租</view>
+                  <view class="middle-btn" onTap="toRoderStaging">分期账单</view>
+                  <view class="middle-btn" onTap="buyOutFun">买断</view>
+                  <view class="link-btn">联系客服</view>
+                </view>
+                <view class="content-bottom" a:if="{{activeTab===6}}">
+                  <view class="middle-btn" onTap="toReturnItem">归还</view>
+                  <view class="last-btn" onTap="toComment">确认收货</view>
+                  <view class="link-btn">联系卖家</view>
+                </view>
+                <view class="content-bottom" a:if="{{activeTab===7}}">
+                  <view class="del-order">删除订单</view>
+                </view>
+              </view>
+            </block>
+          </scroll-view>
+          <view a:else class="nothing">
+            <view class="nothing-Img">
+              <image mode="scaleToFill" src="/image/order/no-data.png"/>
+            </view>
+            <view class="nothing-title">
+              当前暂无订单~
+            </view>
+            <view class="toShopping">返回首页逛逛</view>
+          </view>
+        </view>
+      </tab-content>
+    </block>
+  </tabs>
+</view>

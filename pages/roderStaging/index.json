@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "账单分期",
+  "usingComponents": {
+    "am-icon": "mini-ali-ui/es/am-icon/index"
+  }
+}

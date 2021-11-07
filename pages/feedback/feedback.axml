@@ -1,0 +1,46 @@
+<view class="feedback">
+  <view class="backTypeTitle">
+    <image mode="scaleToFill" src="../../image/BT.png"/>
+    <view>请选择您的反馈类型</view>
+  </view>
+  <radio-group class="radio-group" onChange="radioChange" name="lib">
+    <label class="radio" a:for="{{items}}" key="label-{{index}}">
+      <radio value="{{item.name}}" checked="{{item.checked}}" />
+      <text class="radio-text">{{item.value}}</text>
+    </label>
+  </radio-group>
+  <view class="textArea-title">请补充详细问题和意见</view>
+  <view class="textArea-content">
+    <textarea class="textArea-own" auto-height="{{true}}" placeholder="请输入不少于10个字的问题描述" />
+  </view>
+  <view class="picture-title">
+    <view class="title-content">请提供问题相关的截图或图片</view>
+    <view class="content-num">{{picNum}}/3</view>
+  </view>
+  <view class="picture-content">
+    <view a:if="{{!showPic1}}" data-idx="1" class="picture-every" onTap="openCamera">
+      <am-icon class="plus-icon" type="plus" size="40" color="#e6e6e6" />
+    </view>
+    <image a:if="{{showPic1}}" class="picture-every-img" mode="scaleToFill" src="{{picSrc1}}"/>
+    <view a:if="{{!showPic2}}" data-idx="2" class="picture-every" onTap="openCamera">
+      <am-icon class="plus-icon" type="plus" size="40" color="#e6e6e6" />
+    </view>
+    <image a:if="{{showPic2}}" class="picture-every-img" mode="scaleToFill" src="{{picSrc2}}"/>
+    <view a:if="{{!showPic3}}" data-idx="3" class="picture-every" onTap="openCamera">
+      <am-icon class="plus-icon" type="plus" size="40" color="#e6e6e6" />
+    </view>
+    <image a:if="{{showPic3}}" class="picture-every-img" mode="scaleToFill" src="{{picSrc3}}"/>
+  </view>
+  <view class="submit-btn" onTap="submit">提交</view>
+  <view class="black-bg" a:if="{{showModal}}">
+    <view class="modal-content">
+      <view class="modal-pic">
+        <view class="modal-tips">提交成功</view>
+        <view class="goShopping" onTap="goShopping">去逛逛</view>
+      </view>
+      <view class="close-btn" onTap="closeModal">
+        <am-icon type="close-o" size="30" color="#fff" />
+      </view>
+    </view>
+  </view>
+</view>

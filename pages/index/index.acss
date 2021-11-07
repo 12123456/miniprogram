@@ -1,0 +1,562 @@
+.page {
+  padding: 28rpx 26rpx;
+  /* box-sizing: border-box; */
+  background: linear-gradient(180deg, #0C79FF 0%, #F4F4F4 7%);
+}
+
+.page .search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.discount{
+  width: 80rpx;
+  height: 32rpx;
+  background: #F9554E;
+  border-radius: 5rpx;
+  line-height: 32rpx;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  font-size: 16rpx;
+  top: 0;
+  left: 0;
+}
+
+.page .search .classification,
+.page .search .customer {
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page .search .classification image,
+.page .search .customer image {
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.page .search .classification text,
+.page .search .customer text {
+  color: #fff;
+  font-size: 20rpx;
+}
+
+.page .search .search-input {
+  flex: 1;
+  padding: 5rpx 20rpx;
+  box-sizing: border-box;
+  margin: 0 30rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 50rpx;
+  background-color: #FFF;
+}
+
+.page .search .search-input input {
+  background-color: transparent;
+}
+
+.page .search .search-input .placeholder-search {
+  color: rgba(33, 33, 33, 0.5);
+  font-size: 32rpx;
+}
+
+.page .lbtSwiper {
+  width: 100%;
+  height: 290rpx;
+  background-color: transparent;
+  margin-top: 40rpx;
+}
+
+.page .lbtSwiper .swiper-item {
+  display: block;
+  overflow: hidden;
+  border-radius: 10rpx;
+}
+.page .lbtSwiper .swiper-item image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page .slogan-container {
+  margin-top: 28rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF;
+  border-radius: 10rpx;
+  padding: 26rpx 0 32rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.page .slogan-container .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page .slogan-container .left .slogan {
+  font-size: 36rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #212121;
+}
+
+.page .slogan-container .left .character-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 26rpx;
+}
+
+.page .slogan-container .left .character-container .character {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15rpx;
+  font-size: 0;
+}
+
+.page .slogan-container .left .character-container .character image {
+  width: 26rpx;
+  height: 32rpx;
+}
+
+.page .slogan-container .left .character-container .character .text {
+  font-size: 24rpx;
+  margin-left: 8rpx;
+  color: #666;
+}
+
+.page .slogan-container .right {
+  width: 196rpx;
+  height: 96rpx;
+}
+
+.page .slogan-container .right image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page .big-logo {
+  margin-top: 28rpx;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 26rpx 16rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.page .big-logo .logoinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0;
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+}
+
+.page .big-logo .logoinfo image {
+  width: 108rpx;
+  height: 108rpx;
+}
+
+.page .big-logo .logoinfo .logotext {
+  font-size: 24rpx;
+  margin-top: 18rpx;
+  font-weight: bolder;
+  font-weight: 400;
+  color: #212121;
+}
+
+.page .big-logo .logoinfo:nth-child(-n+5) {
+  margin-top: 0;
+}
+
+.page .big-logo .logoinfo:nth-child(1),
+.page .big-logo .logoinfo:nth-child(6n+0) {
+  margin-left: 0;
+}
+
+.page .page-margin {
+  margin-top: 28rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+}
+
+.page .page-margin .title {
+  font-size: 36rpx;
+  padding: 27rpx 0 0 47rpx;
+  box-sizing: border-box;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #343434;
+  position: relative;
+}
+
+.page .page-margin .title::before {
+  position: absolute;
+  width: 4rpx;
+  height: 32rpx;
+  content: '';
+  top: 34rpx;
+  left: 31rpx;
+  background: #0173FF;
+  border-radius: 2rpx;
+}
+
+.page .page-margin .moveTransverse {
+  width: 100%;
+  margin-top: 10rpx;
+  white-space: nowrap;
+}
+
+.page .page-margin .moveTransverse .content {
+  display: inline-block;
+}
+
+.page .page-margin .moveTransverse .content .contentEvery {
+  padding: 10rpx;
+  width: 300rpx;
+  height: 350rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25rpx;
+  position: relative;
+}
+
+.page .page-margin .moveTransverse .content .contentEvery .goodsImg {
+  width: 100%;
+  height: 70%;
+  border: 2rpx solid #e6e6e6;
+  border-radius: 10rpx;
+}
+
+.page .page-margin .moveTransverse .content .contentEvery .goodsTitle {
+  width: 100%;
+  display: flex;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+
+.page .page-margin .moveTransverse .content .contentEvery .goodsTitle .goodsTitleIcon {
+  width: 100rpx;
+  height: 40rpx;
+  margin-right: 5rpx;
+}
+
+.page .page-margin .moveTransverse .content .contentEvery .goodsTitle .goodsTitleText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  line-height: 44rpx;
+  font-size: 24rpx;
+}
+
+.page .page-margin .moveTransverse .content .contentEvery .goodsPrice {
+  font-size: 24rpx;
+  color: #FF0000;
+  margin-top: 10rpx;
+}
+
+.page .cate-nav {
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+  top: 0;
+  background: #F4F4F4;
+  height: 126rpx;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.page .cate-nav .cate-nav-body {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.page .cate-nav .cate-nav-body .item {
+  display: inline-block;
+  /* margin-right: 92rpx; */
+  width:25%;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.page .cate-nav .cate-nav-body .active .title{
+  color: #ff5e00;
+}
+
+
+.page .cate-nav .cate-nav-body .active .subtitle{
+  /* background-image: url(../../image/recommend.png);
+  background-repeat: no-repeat;
+  background-position: 0 85%;
+  background-size: 100% 30%;
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #343434; */
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px!important;
+  color: white!important;
+  background: linear-gradient(to right, #ff5200 , #f90);
+  border-radius: 15px;
+}
+
+
+
+.page .cate-nav .cate-nav-body .item:last-child {
+  margin-right: 0;
+}
+
+.page .cate-nav .btn-classify {
+  background-image: url(../../image/fixButton.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+  width: 80rpx;
+  height: 60rpx;
+  border-radius: 15rpx 0rpx 0rpx 15rpx;
+  position: relative;
+  right: -10rpx;
+  top: 12rpx;
+}
+
+.page .new-product {
+  background-color: #FFF;
+  border-radius: 10rpx;
+  margin-top: 28rpx;
+  /* overflow: hidden; */
+}
+
+.page .new-product .title {
+  font-size: 36rpx;
+  padding: 27rpx 0 0 29rpx;
+  box-sizing: border-box;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #343434;
+}
+.page .new-product .content {
+  margin-top: 48rpx;
+  background: url("../../image/index-icon3.png") no-repeat;
+  height: 471rpx;
+  background-size: 100% 100%;
+  padding: 1rpx 5% 0 5%;
+}
+.xbSwiper {
+  margin-top: 200rpx;
+  height: 230rpx!important;
+}
+.page .xbSwiper .swiper-item {
+  height: 230rpx;
+  display: flex;
+ background:rgba(255,255,255,0.7);
+}
+.bannerImage{
+  position: absolute;
+  width: 100%!important;
+  height: 100%!important;
+  z-index: -20;
+  margin: 0 0!important;
+  object-fit: cover;
+}
+.page .xbSwiper .box-item image{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 40rpx;
+}
+.page .xbSwiper .box-item .info {
+  padding: 30rpx 35rpx;
+}
+.page .xbSwiper .box-item .info .name{
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #333333;
+}
+.page .xbSwiper .box-item .info .need{
+  padding: 6rpx 0rpx;
+  height: 24rpx;
+  border-radius: 5px;
+  text-align: center;
+  background: rgba(236, 17, 15,.1);
+  color: #F9554E;
+  border: 1px solid #EC110F;
+  font-size: 22rpx;
+  margin: 30rpx 0;
+}
+.page .xbSwiper .box-item .info .price {
+color: #F9554E;
+font-size: 24rpx;
+}
+.page .xbSwiper .box-item .info .tit {
+font-size: 36rpx;
+}
+.page .cate-item {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.new-go {
+  margin-top: 48rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.new-go .m-left,.new-go .m-right{
+  flex: 1;
+  box-sizing: border-box;
+}
+.new-go .m-left {
+  margin-right: 28rpx;
+  width: 333rpx;
+  height: 280rpx;
+}
+.m-leftImg{
+  width: 250rpx;
+  height: 250rpx;
+  object-fit: cover;
+  margin-top: 10rpx;
+  margin-left:calc(50% - 125rpx);
+}
+.new-go .part{
+  overflow: hidden;
+  padding: 30rpx;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+}
+.new-go .mt-28 {
+  margin-top: 28rpx;
+}
+.m-left .name{
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #343434;
+  margin-bottom: 19rpx;
+}
+.rightImg{
+  width: 100rpx;
+  height: 100rpx;  
+  position: absolute;
+  bottom:-30rpx;
+  right: 0;
+}
+.part{
+  position: relative;
+}
+.m-right .name{
+  float: left;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #343434;
+  margin-bottom: 19rpx;
+  
+}
+.m-left .tips {
+  text-align: center;
+  font-size: 20rpx;
+  font-weight: 300;
+  color: #343434;
+  opacity: 0.5;
+}
+.m-right .tips {
+  float: left;
+  font-size: 20rpx;
+  font-weight: 300;
+  color: #343434;
+  opacity: 0.5;
+}
+
+.new-go .m-right .part{
+  width: 333rpx;
+height: 126rpx;
+}
+.page .cate-item .item {
+  background: #fff;
+  width: 333rpx;
+  margin-bottom: 28rpx;
+  padding-bottom: 24rpx;
+  box-sizing: border-box;
+  height: 500rpx;
+  overflow: hidden;
+  text-align: center;
+}
+
+.page .cate-item .item .img {
+  width: 316rpx;
+  height: 316rpx;
+  object-fit: cover;
+}
+
+.page .cate-item .item .name {
+  margin: 19rpx 0 32rpx;
+  text-align: left;
+  overflow: hidden;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #333;
+  display: flex;
+}
+
+.page .cate-item .item .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.page .cate-item .item .bottom .price {
+  display: block;
+  height: 30rpx;
+  text-align: left;
+  font-size: 30rpx;
+  color: #FE2535;
+}
+
+.page .cate-item .item .bottom .days {
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #989898;
+}
+
+.xs_title {
+  display: flex;
+}
+
+.xs_titleText {
+  font-weight: bold;
+  font-size: 38rpx;
+}
+
+.xs_blue {
+  height: 100%;
+  background-color: #0c79ff;
+  width: 5rpx;
+  margin-right: 5rpx;
+}
+
+.widgets-img {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.widgets-title {
+  color: #888888;
+  font-size: 1px;
+}

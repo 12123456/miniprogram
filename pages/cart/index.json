@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "购物车",
+  "titleBarColor": "#0c79ff",
+  "usingComponents": {
+    "stepper": "mini-antui/es/stepper/index",
+    "am-icon": "mini-antui/es/am-icon/index"
+  }
+}

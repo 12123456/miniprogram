@@ -1,0 +1,59 @@
+<view class="header">
+  <view class="status-top">
+    <image mode="scaleToFill" src="/image/order/icon9.png"/>
+    <text>下单成功</text>
+  </view>
+  <view class="tips">我们将尽快为您配送</view>
+</view>
+<view class="main">
+  <view class="operting">
+    <text onTap="toIndex">返回首页</text>
+    <text onTap="toOrder">查看订单</text>
+  </view>
+  <view class="user-info-box">
+    <view class="title">补充身份信息 等待商家电话</view>
+    <view class="boxs-row">
+      <view class="row-item">
+        <image mode="scaleToFill" src="/image/order/icon8.png"/>
+        <view class="item-right">
+          <view class="row-title">身份信息补充</view>
+          <view class="color-red">应相关部门要求 需完善身份信息才能发货</view>
+        </view>
+      </view>
+      <view class="row-item">
+        <image mode="scaleToFill" src="/image/order/icon7.png"/>
+        <view class="item-right">
+          <view class="row-title">订单电话审核</view>
+          <view class="mt15">商家预计48小时内与你联系，请耐心等待</view>
+          <view class="mt15">商家联系电话:13391968682</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="price-info">
+    <view class="buyout-row">
+      <text>第一期租金</text>
+      <text>￥90.00</text>
+    </view>
+    <view class="buyout-row">
+      <text>第一期租金</text>
+      <text>￥90.00</text>
+    </view>
+    <view class="buyout-row">
+      <text>第一期租金</text>
+      <text>￥90.00</text>
+    </view>
+    <view class="buyout-row">
+      <text>第一期租金</text>
+      <text>￥90.00</text>
+    </view>
+    <view class="buyout-row">
+      <text>第一期租金</text>
+      <text>￥90.00</text>
+    </view>
+  </view>
+  <view class="buyout-row">
+    <text>第一期租金</text>
+    <text>￥90.00</text>
+  </view>
+</view>

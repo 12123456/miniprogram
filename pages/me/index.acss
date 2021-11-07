@@ -1,0 +1,312 @@
+@charset "UTF-8";
+.page {
+  background: #f2f2f2;
+  /*收货地址*/
+  /*物流信息*/
+  /* 广告 */
+  /*客服弹窗*/
+}
+
+.page .top {
+  background-position: center;
+  background-image: url(../../image/top_background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: calc(100%-60rpx);
+  height: 240rpx;
+  background-color: #fff;
+  padding: 20rpx 35rpx;
+}
+
+.page .top .top-up {
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 60rpx;
+}
+
+.page .top .top-up .top-left {
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  color: #fff;
+}
+
+.page .top .top-up .top-right {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100rpx;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.page .top .top-up .top-right image {
+  width: 100%;
+  height: 100%;
+}
+
+.page .top .top-up .top-down {
+  text-align: center;
+  margin-top: 20rpx;
+  padding: 0 120rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page .top .top-up .top-down .equipmentNum,
+.page .top .top-up .top-down .totalNum,
+.page .top .top-up .top-down .rzseType {
+  font-size: 25rpx;
+  color: #737373;
+}
+
+.page .toAddress {
+  height: 40rpx;
+  color: #737373;
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  line-height: 40rpx;
+}
+
+.page .toAddress .toAddressIcon {
+  margin: auto 0;
+}
+
+.page .info-list {
+  text-align: center;
+  padding: 40rpx 30rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  width: calc(100%-200rpx);
+  font-size: 25rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page .info-list .info-item {
+  margin-bottom: 48rpx;
+  min-width: 33%;
+  font-size: 0;
+}
+
+.page .info-list .info-item image {
+  width: 48rpx;
+  height: 56rpx;
+  object-fit: cover;
+  margin-bottom: 30rpx;
+}
+
+.page .info-list .info-item .title {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #666;
+}
+
+.page .info-list .info-item:nth-last-child(3),
+.page .info-list .info-item:nth-last-child(2),
+.page .info-list .info-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.page .middle-list {
+  background-color: #fff;
+  margin-top: 22rpx;
+}
+
+.page .middle-list .list-header {
+  display: flex;
+  justify-content: space-between;
+  height: 56rpx;
+  padding: 0 15rpx;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.page .middle-list .list-header text {
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.page .middle-list .list-header view {
+  justify-content: flex-end;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.page .middle-list .list-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page .middle-list .list-container .middle-item {
+  width: 20%;
+  font-size: 0;
+  height: 190rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.page .middle-list .list-container .middle-item image {
+  width: 52rpx;
+  height: 42rpx;
+  object-fit: cover;
+}
+
+.page .middle-list .list-container .middle-item .title {
+  margin-top: 32rpx;
+  font-size: 24rpx;
+  font-family: Noto Sans S Chinese;
+  font-weight: 400;
+  color: #555555;
+}
+
+.page .me-step {
+  margin-top: 20rpx;
+  width: calc(100% - 40rpx);
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+  font-size: 27rpx;
+}
+
+.page .me-step .step-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page .me-step .step-top .step-top-time {
+  color: #737373;
+}
+
+.page .me-step .step-content {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.page .me-step .step-content image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.page .me-step .step-content .step-content-right {
+  height: 80rpx;
+  margin-left: 10rpx;
+}
+
+.page .me-step .step-content .step-content-right .step-content-top {
+  color: #108ee9;
+  height: 35rpx;
+  line-height: 35rpx;
+}
+
+.page .me-step .step-content .step-content-right .step-content-bottom {
+  color: #737373;
+  margin-top: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 35rpx;
+  line-height: 35rpx;
+  width: 550rpx;
+}
+
+.page .me-ad {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 150rpx;
+}
+
+.page .me-ad image {
+  width: 100%;
+  height: 100%;
+}
+
+.page .modalService {
+  border-radius: 20rpx;
+  width: 400rpx;
+}
+
+.page .modalService .modal-service-title {
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+
+.page .modalService .modal-service-tel {
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+
+.page .modalService .modal-service-tel .color-blue {
+  color: #108ee9;
+}
+
+.page .modalService .modal-service-time {
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+
+.page .modalService .close-btn {
+  width: 180rpx;
+  height: 50rpx;
+  font-size: 28rpx;
+  border-radius: 25rpx;
+  border: 1rpx solid #108ee9;
+  line-height: 50rpx;
+  text-align: center;
+  color: #108ee9;
+  margin: 30rpx auto 50rpx auto;
+}
+
+form {
+  height: 1190rpx;
+  width: 100%;
+}
+
+.good-grid {
+  width: 750rpx;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  background-color: #EBEBEB;
+}
+
+.good-grid .h {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 63px;
+  font-size: 0;
+}
+
+.good-grid .h .leftStar,
+.good-grid .h .rightStar {
+  width: 24rpx;
+  height: 28rpx;
+  margin-right: 12rpx;
+}
+
+.good-grid .h .text {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #343434;
+}
+
+.good-grid .b {
+  overflow: hidden;
+  padding: 0 22rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

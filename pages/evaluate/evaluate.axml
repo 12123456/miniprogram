@@ -1,0 +1,29 @@
+<view class="evaluate">
+			<view class="top">
+				<view class="top-left">
+					<view class="rightTitle">满意率</view>
+					<view class="rightContent">98</view>
+					<view class="rightRatio">%</view>
+				</view>
+			</view>
+			<view class="middle">
+        <block a:for="{{evaluate.evaluateList}}">
+          <view class="every">
+						<view class="userMes">
+							<view class="userHeader">
+								<image class="userHeaderImg" mode="scaleToFill" src="{{item.userHeader}}"/>
+							</view>
+							<view class="userName">{{item.userName}}</view>
+						</view>
+						<view class="evaluate-content">{{item.content}}</view>
+            <view class="evaluate-content-imgAll">
+              <!-- <block a:for="{{items.img}}" a:for-item="imgSrc"> -->
+              <image class="evaluate-img" mode="scaleToFill" src="../../image/test04.png"/>
+              <!-- </block> -->
+              <video a:if="{{haveVideo}}" class="evaluate-img" src=""></video>
+            </view>
+						<view class="evaluate-goods">{{item.goods}}</view>
+				  </view>
+        </block>
+			</view>
+</view>

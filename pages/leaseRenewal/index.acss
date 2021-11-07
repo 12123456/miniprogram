@@ -1,0 +1,242 @@
+page {
+  background-color: #f0f0f0;
+  padding-bottom: 210rpx;
+  box-sizing: border-box;
+}
+
+page .hr {
+  height: 10rpx;
+  background: #EB5A63;
+}
+
+page .product-boxs {
+  background-color: #FFF;
+  margin-top: 18rpx;
+  padding: 45rpx 42rpx 45rpx 28rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+
+page .product-boxs image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+page .product-boxs .product-info {
+  flex: 1;
+  margin-left: 20rpx;
+}
+
+page .product-boxs .product-info .product-name {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #212121;
+  line-height: 42rpx;
+}
+
+page .product-boxs .product-info .product-specification {
+  margin-top: 16rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #666666;
+}
+
+page .product-boxs .product-info .product-price {
+  font-size: 28rpx;
+  margin-top: 15rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #EB5A63;
+}
+
+page .xuzu-days {
+  background-color: #FFF;
+  margin-top: 20rpx;
+}
+
+page .xuzu-days .days-row {
+  height: 75rpx;
+  padding-left: 46rpx;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+  font-family: PingFang SC;
+  font-size: 28rpx;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+page .xuzu-days .days-row::before {
+  position: absolute;
+  content: ' ';
+  top: 50%;
+  left: 27rpx;
+  transform: translateY(-50%);
+  width: 4rpx;
+  height: 28rpx;
+  background: #EB5A63;
+}
+
+page .xuzu-days .days-row:last-child {
+  font-weight: 400;
+  color: rgba(33, 33, 33, 0.6);
+}
+
+page .xuzu-days .days-row:last-child::before {
+  display: none;
+}
+
+page .xuzu-days .days-row:last-child view {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+page .xuzu-days .days-row:last-child view input {
+  width: 160rpx;
+}
+
+page .xuzu-days .days-row:last-child .placeholder-days {
+  font-size: 28rpx;
+  text-align: r;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(33, 33, 33, 0.6);
+}
+
+page .lease-details {
+  background-color: #FFF;
+  margin-top: 28rpx;
+}
+
+page .lease-details .days-row {
+  height: 75rpx;
+  padding-left: 46rpx;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+  font-family: PingFang SC;
+  font-size: 28rpx;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+page .lease-details .gray {
+  color: rgba(33, 33, 33, 0.6);
+  font-weight: 400;
+}
+
+page .lease-details .redView {
+  color: #FA6066;
+}
+
+page .lease-details .days-row:first-child::before {
+  position: absolute;
+  content: ' ';
+  top: 50%;
+  left: 27rpx;
+  transform: translateY(-50%);
+  width: 4rpx;
+  height: 28rpx;
+  background: #EB5A63;
+}
+
+page .leave-message {
+  margin-top: 28rpx;
+  background-color: #FFF;
+  padding-left: 27rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  color: #212121;
+  height: 75rpx;
+}
+
+page .leave-message text {
+  font-weight: bold;
+}
+
+page .leave-message input {
+  flex: 1;
+}
+
+page .leave-message .placeholder-leave {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(33, 33, 33, 0.4);
+}
+
+page .protocol {
+  margin-top: 31rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+}
+
+page .protocol text {
+  color: #3390FF;
+}
+
+page .operting-boxs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: #FFF;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 15rpx #dadada;
+}
+
+page .operting-boxs .left {
+  flex: 1;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #212121;
+}
+
+page .operting-boxs .left text {
+  font-size: 24rpx;
+  color: #FA5564;
+}
+
+page .operting-boxs .left text text {
+  font-size: 48rpx;
+}
+
+page .operting-boxs .pay-btn {
+  text-align: center;
+  width: 380rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  background: linear-gradient(90deg, #F95063 0%, #FC756A 100%);
+  border-radius: 36rpx;
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+}

@@ -1,0 +1,31 @@
+<view class="page" style="height:{{windowHeight}}px">
+  <view class="row row1">
+    <view class="title-container">
+      <view class="official-title">请扫描身份证的正反面</view>
+      <view class="subheading">正面为头像 反面为国徽</view>
+    </view>
+    <view class="photo-container">
+      <view class="front-side"></view>
+      <view class="back-side"></view>
+    </view>
+  </view>
+
+  <view class="row row2">
+    <view class="title-container">
+      <view class="official-title">上传您手持身份证正面照</view>
+      <view class="subheading">请保证您的身份信息清晰完整</view>
+    </view>
+    <view class="photo-container">
+      <view class="face-side"></view>
+    </view>
+  </view>
+
+  <view class="row row3" onTap="toOtherMateiral">
+    <view class="title-container">其他相关证明材料</view>
+    <am-icon type="arrow-right" size="24" color="#8A8A8A" />
+  </view>
+
+  <view class="row row4">
+    <button class="submit">提交</button>
+  </view>
+</view>

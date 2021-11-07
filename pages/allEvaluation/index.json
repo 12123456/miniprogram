@@ -1,0 +1,6 @@
+{
+    "defaultTitle": "全部评价(99)",
+     "usingComponents": {
+         "all-evaluation":"/components/comment-item/comment-item"
+     }
+}

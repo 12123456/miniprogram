@@ -1,0 +1,97 @@
+.store .top {
+  color: #fff;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 14px;
+  box-sizing: border-box;
+  background: url(../../image/storeBg.png) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+
+.store .top .top-left {
+  display: flex;
+  align-items: center;
+}
+
+.store .top .top-left .headerImg {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store .top .top-left .headerImg image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.store .top .top-left .top-left-content {
+  height: 80rpx;
+  font-size: 25rpx;
+  line-height: 40rpx;
+}
+
+.store .top .top-left .top-left-content .companyName {
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.store .top .top-left .top-left-content .check {
+  display: flex;
+  margin-right: 2rpx;
+  font-size: 0;
+  align-items: center;
+}
+
+.store .top .top-left .top-left-content .check .bondTrueIcon {
+  margin-right: 5px;
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.store .top .top-left .top-left-content .check .check-content {
+  font-size: 12px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.store .top .top-right {
+  width: 38px;
+  height: 38px;
+}
+
+.store .top .top-right image {
+  width: 100%;
+  height: 100%;
+}
+
+.store .middle {
+  padding: 14px 14px 0;
+  box-sizing: border-box;
+}
+
+.store .middle .scroll {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bottomTips {
+  font-size: 30rpx;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: darkgray;
+}

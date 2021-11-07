@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "popover": "mini-antui/es/popover/index",
+    "popover-item": "mini-antui/es/popover/popover-item/index",
+    "popup": "mini-ali-ui/es/popup/index",
+    "goods-item":"/components/goods-item/goods-item"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "订单详情",
+  "usingComponents": {
+    "am-icon": "mini-antui/es/am-icon/index"
+  }
+}

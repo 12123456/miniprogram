@@ -1,0 +1,101 @@
+<view class="tips-box">
+  <view class="left">
+    <image mode="scaleToFill" src="/image/order/icon1.png"/>
+    <text>温馨提示:请确保账户金额大于实付款，确保下单成功</text>
+  </view>
+  <image mode="scaleToFill" src="/image/order/icon2.png"/>
+</view>
+<view class="userMes">
+  <image mode="scaleToFill" src="/image/order/address.png"></image>
+  <view class="userMes-content">
+    <view class="userMes-content-top">
+      <text class="userMes-name">张三</text>
+      <text class="userMes-tel">136****8988</text>
+    </view>
+    <view class="userMes-content-bottom">北京市海淀区中关村生命科技园</view>
+  </view>
+</view>
+<view class="No-authentication">
+<text>实名认证:</text>
+<text>还未进行实名认证，去认证~</text>
+</view>
+<view class="orderMes">
+  <view class="company">
+    <image mode="scaleToFill" src="/image/goodsDetails/shop-logo.png"/>
+    <text>广州智信科技有限公司</text>
+  </view>
+  <view class="goodsMes">
+    <image mode="scaleToFill" src="/image/order/shop-img.png"></image>
+    <view class="goodsMes-right">
+      <view class="goodsMes-title">小米笔记本 Pro 15 OLED 锐龙版 R7 16G 512G 灰色 灰色小米笔记本 Pro 15 OLED 锐龙版 R7 16G 512G 灰色 灰色小米笔记本 Pro 15 OLED 锐龙版 R7 16G 512G 灰色 灰色小米笔记本 Pro 15 OLED 锐龙版 R7 16G 512G 灰色 灰色</view>
+      <!--<view class="goodsMes-dec">规格:黑i5笔记本整机电脑整机(i5-10400)</view> -->
+      <view class="specification">规格：黑色/i5-5300U/8G/256G固态/集显</view>
+      <view class="free-deposit">芝麻信用-免押金</view>
+    </view>
+  </view>
+  <view class="goodsMes-money">总租金：￥33075.<text>20</text></view>
+  <view class="moneyType">
+    <view class="moneyType-left">随租随换6个月 1899.00元/月</view>
+    <am-icon class="moneyTypeIcon" type="help-o" size="15"></am-icon>
+  </view>
+  <view class="moneyContent">
+   <view class="moneyContent-item">
+      <view class="moneyContent-title">第一期租金</view>
+      <view class="moneyContent-price">￥209.00</view>
+    </view>
+    <view class="moneyContent-item">
+      <view class="moneyContent-title">运费</view>
+      <view class="moneyContent-price ">到付</view>
+    </view>
+    
+    <view class="moneyContent-item">
+      <view class="moneyContent-title">剩余还款计划</view>
+      <view class="moneyContent-price">￥147.00*11期</view>
+    </view>
+    <view class="moneyContent-item">
+      <view class="moneyContent-title">优惠券</view>
+      <view class="moneyContent-price color-red">-￥0.00</view>
+    </view>
+    <!-- <view class="moneyContent-item">
+      <view class="moneyContent-title">下期还款时间</view>
+      <view class="moneyContent-price color-red">2021-04-01(￥231.49)</view>
+    </view> -->
+    <!--<view class="moneyContent-tips">(提交订单后，基于您的信用将免除<text class="color-red">￥0-2866.00</text>押金)</view> -->
+    <view class="total-all">
+    合计：<text>￥231.56</text>
+    </view>
+  </view>
+</view>
+<view class="orderTime">
+  <view class="moneyContent-item">
+    <view class="moneyContent-title">商品总押金
+      <text class="deposit-help"></text></view>
+    <view class="moneyContent-price">￥2000.00</view>
+  </view>
+  <view class="moneyContent-tips">提交订单后，基于您的信用将免除
+    <text>￥0-2866.00</text>押金</view>
+</view>
+<view class="buyoutPrice">
+  <view class="moneyContent-title">到期买断价</view>
+  <view class="moneyContent-price">￥2866.00</view>
+</view>
+<view class="leaveMes">
+  <view class="leaveMes-title">买家留言:</view>
+  <input  focus="{{false}}" placeholder-class="placeholder-input" placeholder="请在这里留下你的备注~"/>
+</view>
+<view class="page-fixed">
+<view class="ps">
+  <view class="click" onTap="readmeClick">
+  <am-icon type="{{readme}}"  color="rgb(16, 142, 233)" size="15"></am-icon>
+    <view class="margin-left">我已阅读并接受</view>
+  </view>
+  <view class="color-blue" onTap="toAfterSale">《租赁及服务相关协议》</view>
+</view>
+<view class="page-bottom">
+  <view class="bottom-left">
+      实付:
+    <text>￥<text>209</text>.00</text>
+  </view>
+  <view class="bottom-right" onTap="toPaySuccess">信用授权支付</view>
+</view>
+</view>

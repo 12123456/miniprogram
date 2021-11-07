@@ -1,0 +1,186 @@
+.tab-content {
+  height: calc(100vh - 100rpx);
+  background-color: #e6e6e6;
+}
+/* 缺省页 */
+.nothing {
+  width: 100%;
+  height: 100%;
+  padding-top: 130rpx;
+  background-color: #fff;
+}
+
+.nothing-Img {
+  margin: 0 auto;
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.nothing-Img image {
+  width: 100%;
+  height: 100%;
+}
+
+.nothing-title {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #737373;
+  text-align: center;
+  margin-bottom: 150rpx;
+}
+
+.toShopping {
+  margin: 0 auto;
+  width: 500rpx;
+  height: 80rpx;
+  border-radius: 50rpx;
+  color: #fff;
+  background-color: rgb(16, 142, 233);
+  font-size: 30rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+/* 缺省页end */
+.content-scroll {
+  padding-bottom: 100rpx;
+  width: 100%;
+  height: 100%;
+}
+
+.every-content {
+  font-size: 28rpx;
+  width: 90%;
+  margin: 30rpx auto 0 auto;
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+}
+
+.content-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-left {
+  display: flex;
+}
+
+.top-left image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.top-left-title, .top-left-autor {
+  margin-left: 10rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.top-right {
+  color: rgb(16, 142, 233);
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.content-middle {
+  margin-top: 50rpx;
+  display: flex;
+}
+
+.content-middle image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.middle-right {
+  margin-left: 20rpx;
+  height: 150rpx;
+  width: calc(100% - 170rpx);
+}
+
+.middle-right-title {
+  height: 40rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.middle-right-dec {
+  margin-top: 10rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  color: #737373; 
+}
+
+.middle-right-price {
+  font-size: 50rpx;
+  height: 70rpx;
+  color: red;
+  display:table-cell;      /*按照单元格的样式显示元素*/
+  vertical-align:bottom;   /*底对齐*/
+}
+
+.priceType {
+  font-size: 28rpx;
+}
+
+.all-price {
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.goods-num {
+  height: 100%;
+  display:table-cell;      /*按照单元格的样式显示元素*/
+  vertical-align:bottom;   /*底对齐*/
+}
+
+.price-content {
+  margin-left: 20rpx;
+}
+
+.priceAll {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.content-bottom {
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link-btn {
+  margin-right: 20rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  border: 1rpx solid black;
+  line-height: 50rpx;
+  width: 160rpx;
+  text-align: center;
+}
+
+.middle-btn {
+  margin-right: 20rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  border: 1rpx solid black;
+  line-height: 50rpx;
+  width: 160rpx;
+  text-align: center;
+}
+
+.last-btn {
+  height: 50rpx;
+  border-radius: 25rpx;
+  border: 1rpx solid rgb(16, 142, 233);
+  line-height: 50rpx;
+  width: 160rpx;
+  text-align: center;
+  color: rgb(16, 142, 233);
+}

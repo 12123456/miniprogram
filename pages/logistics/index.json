@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "查看物流",
+    "usingComponents": {
+    "steps": "mini-antui/es/steps/index"
+  }
+}

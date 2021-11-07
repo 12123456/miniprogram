@@ -1,0 +1,23 @@
+<view class="evaluation-item">
+  <view class="user-info">
+    <view class="users">
+      <view class="avatar">
+        <image mode="scaleToFill" src="/image/avatar.png"/>
+      </view>
+      <view class="info">
+        <text class="user-nick">名字名字名字名字名字</text>
+        <text class="evaluation-date">2021-06-26 00:59</text>
+      </view>
+    </view>
+    <image class="xinxin" mode="scaleToFill" src="/image/goodsDetails/icon-7.png"/>
+  </view>
+  <view class="evaluation-content">
+    台湾积体电路制造股份有限公司，中文简称:台积电，英文简称:tsmc，属于半导体制造公司。成立于1987年，是全球第一家专业积体电路制造服务(晶圆代工foundry)企业，总部与主要工厂位于中国台湾省新竹市科学园区。
+2017年，领域占有率56%。2018年一季度，合并营收85亿美元，同比增长6%，净利润30亿美元，同比增长2.5%，毛利率为50.3%，净利率为36.2%，其中10纳米晶圆出货量占据了总晶圆营收的19%。截止2018年4月19日，美股TSM，市值2174亿美元，静态市盈率19。
+  </view>
+  <view class="imglist">
+    <view>
+      <image mode="scaleToFill" onTap="imgYu" data-list="{{imgarr}}" data-index="{{itIndex}}" a:for="{{5}}" a:key="itIndex" a:for-index="itIndex" src="/image/avatar.png"/>
+    </view>
+  </view>
+</view>

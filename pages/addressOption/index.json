@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "设置地址",
+  "usingComponents": {
+    "notice": "mini-antui/es/notice/index",
+    "am-icon": "mini-antui/es/am-icon/index",
+    "picker-item": "mini-antui/es/picker-item/index"
+  }
+}

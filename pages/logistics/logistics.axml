@@ -1,0 +1,39 @@
+<view class="logistics">
+  <view class="top">
+    <view class="goods-img">
+      <image mode="scaleToFill" src="../../image/test02.png"/>
+    </view>
+    <view class="top-right">
+      <view class="status">
+        <view class="top-right-title">当前状态：</view>
+        <view class="top-right-content color-red">已签收</view>
+      </view>
+      <view class="status">
+        <view class="top-right-title">快递公司：</view>
+        <view class="top-right-content">京东速递</view>
+      </view>
+      <view class="status">
+        <view class="top-right-title">运单编号：</view>
+        <view class="top-right-content code-content">
+          <view class="code">{{transportCode}}</view>
+          <view class="copy-btn" onTap="doCopy">复制</view>
+        </view>
+      </view>
+      <view class="status">
+        <view class="top-right-title">客服电话：</view>
+        <view class="top-right-content color-blue">4001234982662</view>
+      </view>
+    </view>
+  </view>
+  <view class="middle">
+    <view class="middle-title">
+      物流动态
+    </view>
+    <view class="stepsAll">
+      <steps size="22" className="stepsTmp" direction="vertical" activeIndex="{{activeIndex}}" items="{{items}}"></steps>
+    </view>
+  </view>
+  <view class="bottom">
+    部分物流信息由<text class="color-red">菜鸟裹裹</text>提供
+  </view>
+</view>

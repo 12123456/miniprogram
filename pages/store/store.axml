@@ -1,0 +1,36 @@
+<view class="store">
+  <view class="top">
+    <view class="top-left">
+      <image class="headerImg" mode="scaleToFill" src="../../image/touxiang.png"/>
+      <view class="top-left-content">
+        <view class="companyName">大连何鑫网络科技有限公司</view>
+        <view class="check">
+          <image class="bondTrueIcon" mode="scaleToFill" src="../../image/bondTrue.png"/>
+          <view class="check-content">已缴纳保证金</view>
+        </view>
+      </view>
+    </view>
+    <view class="top-right">
+      <image mode="scaleToFill" src="../../image/storePeople.png"/>
+    </view>
+  </view>
+  <view class="middle">
+    <scroll-view class="scroll" scroll-y="{{true}}">
+      <block a:for="{{goodsList}}">
+        <view class="scroll-content">
+          <image mode="aspectFill" src="{{item.img}}"/>
+          <view class="goodsTitle">{{item.title}}</view>
+          <view class="goods-middle">
+            <view class="price">{{item.price}}</view>
+            <view class="condition">{{item.condition}}</view>
+          </view>
+          <view class="goods-bottom">
+            <view class="tip1">非全新</view>
+            <view class="tip2">租完即送</view>
+          </view>
+        </view>
+      </block>
+      <view class="bottomTips">亲没有更多了哦！</view>
+    </scroll-view>
+  </view>
+</view>

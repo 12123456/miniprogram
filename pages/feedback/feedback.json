@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "用户反馈",
+  "usingComponents": {
+    "am-icon": "mini-antui/es/am-icon/index"
+  }
+}

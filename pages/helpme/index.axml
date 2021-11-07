@@ -1,0 +1,45 @@
+<view class="helpme">
+  <view class="title-all">
+    关于产品租赁服务
+  </view>
+  <view class="content-every">
+    <view class="content-title">
+      信用租机的条件是什么？
+    </view>
+    <view class="content-dec">
+      通过芝麻信用风险评估体系的用户可享受租机服务,信用越 好，所免押金越多，信用较高的用户可享受押金全免服务。
+    </view>
+  </view>
+  <view class="content-every">
+    <view class="content-title">
+      租赁流程
+    </view>
+    <view class="content-dec">
+      用户选择商品规格、型号，颜色、租赁期数下单。商家发货后 将自动扣除首期款包含安装包／配件／意外保障费用」，以后每 月定时扣款，请保证扣款时余额充足。使用期间耗材更换由全民租机承担。租期满可续租、可买断、可归还。
+    </view>
+  </view>
+  <view class="content-every">
+    <view class="content-title">
+      发货流程
+    </view>
+    <view class="content-dec">
+      客服人员会通过电话与您联系，确认订单。物流信息会在发货 后以短信形式通知。收货地址务必精确到门牌号，快递需本人 签收。,信用越 好，所免押金越多，信用较高的用户可享受押金全免服务。
+    </view>
+  </view>
+  <view class="content-every">
+    <view class="content-title">
+      退货流程
+    </view>
+    <view class="content-dec">
+      商品未发货前可以申请退货，一经发货．除产品质量问题外． 不支持无理由退换．到货后七日内未经拆封，可联系客服人员 退换。正常情况下退货申请会在3-6日内处理。运费自理，不支 持到付。
+    </view>
+  </view>
+  <view class="content-every">
+    <view class="content-title">
+      租期完成
+    </view>
+    <view class="content-dec">
+      租赁期满． 我司客服：  可选择续租、归还或者买断．归还用户可直接联系 也可根据需求选择其他产品下单。
+    </view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<view class="billDetail">
+  <view class="top">
+    <view class="top-left">
+      <view class="top-left-title">本期账单</view>
+      <image mode="scaleToFill" src="../../image/3jiao.png"/>
+    </view>
+    <view class="top-right">￥540.45</view>
+  </view>
+  <view class="billList">
+    <block>
+      <view class="bill-every" onTap="toDetailItem">
+        <view class="bill-left">
+          <image mode="scaleToFill" src="/image/test01.png"/>
+          <view class="bill-content">
+            <view class="bill-content-top">文字文字文字文字文字文字文字文字文字文字</view>
+            <view class="bill-content-time">
+              <view class="bill-content-time-left">08-26</view>
+              <view class="bill-content-time-right">分期</view>
+            </view>
+          </view>
+        </view>
+        <view class="bill-right">￥200.00</view>
+      </view>
+    </block>
+  </view>
+  <view class="tips">亲没有更多了哦！</view>
+</view>

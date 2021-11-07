@@ -1,0 +1,46 @@
+<view class="settled">
+  <view class="all-pic">
+    <view class="content">
+      <view class="input-div">
+        <input class="input" placeholder="请输入公司名称" />
+      </view>
+      <view class="input-div">
+        <input class="input" placeholder="请输入公司地址" />
+      </view>
+      <view class="input-div">
+        <input class="input" placeholder="请输入联系人" />
+      </view>
+      <view class="input-div">
+        <input class="input" placeholder="请输入联系人电话" />
+      </view>
+      <view class="input-div">
+        <input class="input" placeholder="请输入营业品类" />
+      </view>
+      <view class="radio-all">
+        <view class="radio-content">
+          <view class="content-title">线下实体店</view>
+          <switch class="xxst-switch" onChange="switch2Change"/>
+        </view>
+        <view class="radio-content">
+          <view class="content-title">租赁二手商品</view>
+          <switch class="zles-switch" onChange="switch2Change"/>
+        </view>
+      </view>
+      <view class="save-btn" onTap="save">保存</view>
+      <view class="tips">*官方承诺您的信息将不会被泄露</view>
+    </view>
+  </view>
+
+  <view class="black-bg" a:if="{{showModal}}">
+    <view class="modal-content">
+      <view class="modal-pic">
+        <view class="modal-tips-top">您的入驻信息提交成功</view>
+        <view class="modal-tips-bottom">您的入驻信息已提交，届时我们工作人员会与您联系，请保持电话通畅</view>
+        <view class="goShopping" onTap="showModal">知道了</view>
+      </view>
+      <view class="close-btn" onTap="showModal">
+        <am-icon type="close-o" size="30" color="#fff" />
+      </view>
+    </view>
+  </view>
+</view> 

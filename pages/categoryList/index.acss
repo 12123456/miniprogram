@@ -1,0 +1,140 @@
+.top {
+  width: 100%;
+  height: 13vh;
+  background-color: #fff;
+}
+
+.top-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-scroll {
+  margin-left: 30rpx;
+  white-space: nowrap;
+  width: 500rpx;
+  height: 100rpx;
+  display: flex;
+}
+
+.bjb, .tsj, .dyj, .dnpj, .ydsb, .smyl {
+  height: 100rpx;
+  width: 200rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin-right: 30rpx;
+}
+
+.top-search {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.top-choose {
+  margin-left: 30rpx;
+  display: flex;
+}
+
+.top-choose-new {
+  text-align: center;
+  width: 120rpx;
+  line-height: 50rpx;
+  margin-right: 30rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  font-size: 30rpx;
+  background-color: rgb(16, 142, 233);
+}
+
+.top-choose-old {
+  text-align: center;
+  width: 120rpx;
+  line-height: 50rpx;
+  background-color: #e6e6e6;
+  height: 50rpx;
+  border-radius: 25rpx;
+  font-size: 30rpx;
+}
+
+.middle {
+  background-color: #e6e6e6;
+  width: 100%;
+  height: 87vh;
+}
+
+.scroll {
+  width: 93%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.scroll-content {
+  padding: 15rpx 20rpx;
+  margin-top: 32rpx;
+  background-color: #fff;
+  width: 42%;
+}
+
+.scroll-content image {
+  width: 100%;
+  height: 340rpx;
+}
+
+.goodsTitle {
+  width: 100%;
+  height: 70rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+}
+
+.goods-middle {
+  margin-top: 5rpx;
+  font-size: 25rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  color: red;
+}
+
+.condition {
+  color: darkgrey;
+}
+
+.goods-bottom {
+  margin-top: 5rpx;
+  font-size: 16rpx;
+  width: 100%;
+  display: flex;
+}
+
+.tip1 {
+  border: 1rpx solid red;
+  border-radius: 10rpx;
+  color: red;
+  height: 25rpx;
+  line-height: 25rpx;
+}
+
+.tip2 {
+  margin-left: 8rpx;
+  border: 1rpx solid greenyellow;
+  border-radius: 10rpx;
+  color: greenyellow;
+  height: 25rpx;
+  line-height: 25rpx;
+}
+
+.bottomTips {
+  font-size: 30rpx;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: darkgray;
+}

@@ -1,0 +1,362 @@
+.page {
+    padding: 28rpx 26rpx;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #0C79FF 0%, #F4F4F4 7%);
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .classification,
+        .customer {
+            font-size: 0;
+            display: flex;
+            flex-direction: column;
+
+            image {
+                width: 44rpx;
+                height: 44rpx;
+            }
+
+            text {
+                color: #fff;
+                font-size: 20rpx;
+            }
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 5rpx 20rpx;
+            box-sizing: border-box;
+            margin: 0 30rpx;
+            display: flex;
+            align-items: center;
+            border-radius: 50rpx;
+            background-color: #FFF;
+
+            input {
+                background-color: transparent;
+            }
+
+            .placeholder-search {
+                color: rgba(33, 33, 33, 0.5);
+                font-size: 32rpx;
+            }
+        }
+    }
+
+    .lbtSwiper {
+        width: 100%;
+        height: 290rpx;
+        background-color: transparent;
+        margin-top: 45rpx;
+
+        .swiper-item {
+            display: block;
+            overflow: hidden;
+            border-radius: 10rpx;
+
+            image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .slogan-container {
+        margin-top: 28rpx;
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFF;
+        border-radius: 10rpx;
+        padding: 26rpx 0 32rpx 20rpx;
+        box-sizing: border-box;
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            .slogan {
+                font-size: 36rpx;
+                font-family: Source Han Sans CN;
+                font-weight: 500;
+                color: #212121;
+            }
+
+            .character-container {
+                display: flex;
+                flex-direction: row;
+                margin-top: 26rpx;
+
+                .character {
+                    display: flex;
+                    flex-direction: row;
+                    margin-right: 15rpx;
+                    font-size: 0;
+
+                    image {
+                        width: 26rpx;
+                        height: 32rpx;
+                    }
+
+                    .text {
+                        font-size: 24rpx;
+                        margin-left: 8rpx;
+                        color: #666;
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 196rpx;
+            height: 96rpx;
+
+            image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .big-logo {
+        margin-top: 28rpx;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 26rpx 16rpx;
+        border-radius: 10rpx;
+        box-sizing: border-box;
+        background-color: #fff;
+
+        .logoinfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0;
+            margin-top: 50rpx;
+            margin-left: 30rpx;
+
+            image {
+                width: 108rpx;
+                height: 108rpx;
+            }
+
+            .logotext {
+                font-size: 24rpx;
+                margin-top: 18rpx;
+                font-weight: bolder;
+                font-weight: 400;
+                color: #212121;
+            }
+        }
+
+        .logoinfo:nth-child(-n+5) {
+            margin-top: 0;
+        }
+
+        .logoinfo:nth-child(1),
+        .logoinfo:nth-child(6n+0) {
+            margin-left: 0;
+        }
+    }
+
+    .page-margin {
+        margin-top: 28rpx;
+        background: #FFFFFF;
+        border-radius: 20rpx;
+
+        .title {
+            font-size: 36rpx;
+            padding: 27rpx 0 0 47rpx;
+            box-sizing: border-box;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: #343434;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                width: 4rpx;
+                height: 32rpx;
+                content: '';
+                top: 34rpx;
+                left: 31rpx;
+                background: #0173FF;
+                border-radius: 2rpx;
+            }
+        }
+
+        .moveTransverse {
+            width: 100%;
+            margin-top: 10rpx;
+            white-space: nowrap;
+
+            .content {
+                display: inline-block;
+
+                .contentEvery {
+                    padding: 10rpx;
+                    width: 300rpx;
+                    height: 350rpx;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 25rpx;
+
+                    .goodsImg {
+                        width: 100%;
+                        height: 70%;
+                        border: 2rpx solid #e6e6e6;
+                        border-radius: 10rpx;
+                    }
+
+                    .goodsTitle {
+                        width: 100%;
+                        display: flex;
+                        font-size: 22rpx;
+                        margin-top: 10rpx;
+
+                        .goodsTitleIcon {
+                            width: 100rpx;
+                            height: 40rpx;
+                            margin-right: 5rpx;
+                        }
+
+                        .goodsTitleText {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            width: 100%;
+                            line-height: 44rpx;
+                            font-size: 24rpx;
+                        }
+                    }
+
+                    .goodsPrice {
+                        font-size: 24rpx;
+                        color: #FF0000;
+                        margin-top: 10rpx;
+                    }
+                }
+            }
+        }
+    }
+
+    .cate-nav {
+        position: sticky;
+        position: -webkit-sticky;
+        left: 0;
+        top: 0;
+        background: #F4F4F4;
+        height: 126rpx;
+        display: flex;
+        align-items: center;
+        z-index: 5;
+
+        .cate-nav-body {
+            white-space: nowrap;
+            overflow: hidden;
+
+            .item {
+                display: inline-block;
+                margin-right: 92rpx;
+                color: #333;
+                font-size: 28rpx;
+            }
+
+            .active {
+                background-image: url(../../image/recommend.png);
+                background-repeat: no-repeat;
+                background-position: 0 85%;
+                background-size: 100% 30%;
+                font-size: 36rpx;
+                font-family: PingFang SC;
+                font-weight: 500;
+                color: #343434;
+            }
+
+            .item:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .btn-classify {
+            background-image: url(../../image/fixButton.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 100% 100%;
+            width: 80rpx;
+            height: 60rpx;
+            border-radius: 15rpx 0rpx 0rpx 15rpx;
+            position: relative;
+            right: -10rpx;
+            top: 12rpx;
+        }
+
+
+    }
+
+    .new-product {
+        background-color: #FFF;
+        border-radius: 10rpx;
+        margin-top: 28rpx;
+        overflow: hidden;
+
+        .title {
+            font-size: 36rpx;
+            padding: 27rpx 0 0 29rpx;
+            box-sizing: border-box;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: #343434;
+        }
+
+        .content {
+            padding: 153rpx 5% 0 5%;
+            margin-top: 48rpx;
+            background: url('../../image/index-icon3.png') no-repeat;
+            height: 471rpx;
+            background-size: 100%;
+            position: relative;
+        }
+    }
+
+    .cate-item {
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
+
+.xs_title {
+    display: flex;
+}
+
+.xs_titleText {
+    font-weight: bold;
+    font-size: 38rpx;
+}
+
+.xs_blue {
+    height: 100%;
+    background-color: #0c79ff;
+    width: 5rpx;
+    margin-right: 5rpx;
+}
+
+.widgets-img {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.widgets-title {
+    color: #888888;
+    font-size: 1px;
+}

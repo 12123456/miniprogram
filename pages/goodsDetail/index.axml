@@ -1,0 +1,352 @@
+<view class="goodsDetail">
+  <view class="goodsTop">
+    <swiper class="top-swiper" indicator-dots="true" indicator-color="#DEDEDE" onChange="swiperChange">
+      <block a:for="{{goodsImgList}}">
+        <swiper-item key="swiper-item-{{index}}">
+          <view class="swiper-content">
+            <image mode="aspectFit" src="{{item.src}}" />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="outside-swiperPosition">
+      <view class="swiperPosition">
+        {{current}}/{{goodsImgList.length}}
+      </view>
+    </view>
+    <view class="free-custody">
+      <image mode="scaleToFill" src="/image/goodsDetails/icon-1.png" />芝麻信用.免押金</view>
+    <view class="goods-price-info">
+      <view class="goodsPrice">
+        <text>￥</text>
+        <text>135</text>
+        <text>/月</text>
+      </view>
+      <view class="officeprice-container">
+        <text>全新</text>
+      </view>
+      <view class="goods-title">
+        <text class="title">ThinkPaid的测试文字测试文字测试文字测试文字</text>
+        <text class="sales">销量98</text>
+      </view>
+      <view class="goods-info-desc">
+        <text class="left">360天起租</text>
+        <view class="right">
+          <text>官方售价</text>
+          <text>￥4399起</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="goodsCheck">
+    <list>
+      <list-item arrow="{{true}}">
+        <text>发货</text>
+        <view className="express-ways" slot="afterTitle">
+          <text class="left">
+            <image mode="scaleToFill" src="/image/goodsDetails/icon-2.png"/>广州</text>
+          <text class="right">运费:到付</text>
+        </view>
+      </list-item>
+      <list-item arrow="{{true}}" onClick="popupCouponClick">
+        <text>优惠</text>
+        <view className="coupon-ways" slot="afterTitle">
+          <text>收藏有礼</text>
+          <text>领券</text>
+        </view>
+      </list-item>
+      <list-item arrow="{{true}}">
+        <text>服务</text>
+        <view className="serve-ways" slot="afterTitle">芝麻信用免押.正品保障.售后电话.全新正品</view>
+      </list-item>
+    </list>
+  </view>
+  <view class="goods-tips">
+    <view class="tips-list">
+      <block a:for="{{goodsTipsList}}">
+        <view class="goods-tips-every">
+          <image mode="scaleToFill" src="{{item.icon}}"/>
+          <view class="goods-tips-item">{{item.title}}</view>
+        </view>
+      </block>
+    </view>
+    <view class="tips-container">
+      <view a:for="{{4}}" class="tips-item" a:key="index">
+        <text class="index-text">0{{index+1}}</text>
+        <view class="right-item">
+          <text>正品保障</text>
+          <text>蚂蚁金服 中国人保</text>
+        </view>
+      </view>
+    </view>
+    <view class="shop-info">
+      <view class="shop-top">
+        <view class="shop-left">
+          <image class="logo" mode="scaleToFill" src="/image/goodsDetails/shop-logo.png"/>
+          <view class="info-right">
+            <view class="shop-name">全民租机旗舰店</view>
+            <view class="info-bottom">
+              <view class="info-bottom-left">
+                <text>店铺星级</text>
+                <image mode="scaleToFill" src="/image/goodsDetails/icon-7.png"/>
+              </view>
+              <text class="people-num">1250人关注</text>
+            </view>
+          </view>
+        </view>
+        <text class="into-shop">进店</text>
+      </view>
+      <view class="shop-bottom">
+        <view a:for="{{3}}">店铺描述
+          <text>3.2</text></view>
+      </view>
+    </view>
+  </view>
+  <!-- 评论板块 star-->
+  <view class="comment">
+    <view class="top-header" onTap="toAllEvaluation">
+      <text>全部评价</text>
+      <text>好评度99%</text>
+    </view>
+     <all-evaluation a:for="{{1}}"></all-evaluation>
+  </view>
+  <!-- 评论板块 end-->
+  <!-- 店长推荐 star-->
+  <view class="recommended">
+    <view class="recommended-header">店铺推荐</view>
+    <swiper class="top-swiper" indicator-dots="true" indicator-color="#D1D1D1" indicator-active-color="#F9554E" onChange="swiperChange">
+      <block a:for="{{goodsImgList}}">
+        <swiper-item key="swiper-item-{{index}}">
+          <view class="recommended-content">
+            <image mode="scaleToFill" src="/image/test04.png"/>
+            <view class="title">iphone 12</view>
+            <view class="price">￥<text>9.</text>18/天</view>
+          </view>
+          <view class="recommended-content">
+            <image mode="scaleToFill" src="/image/test04.png"/>
+            <view class="title">iphone 12</view>
+            <view class="price">￥<text>9.</text>18/天</view>
+          </view>
+          <view class="recommended-content">
+            <image mode="scaleToFill" src="/image/test04.png"/>
+            <view class="title">iphone 12</view>
+            <view class="price">￥<text>9.</text>18/天</view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 店长推荐 end-->
+  <!-- 底部tab -->
+  <view class="goods-bottom">
+    <view class="tab-list">
+      <view onTap="handleTabChange" data-index="{{index}}" class="list-item {{index===bottomIndex?'acive-item':''}}" a:key="index" a:for="{{['商品详情','租赁须知','常见问题']}}">{{item}}</view>
+    </view>
+  </view>
+  <!-- 底部tab -->
+</view>
+<!-- tabbar -->
+<view class="page-bottom">
+  <view class="left-box">
+    <view class="car-nav-item">
+      <image mode="scaleToFill" src="/image/goodsDetails/icon-8.png" />
+      <text>首页</text>
+    </view>
+    <view class="car-nav-item" onTap="toStore">
+      <image mode="scaleToFill" src="/image/goodsDetails/icon-9.png" />
+      <text>店铺</text>
+    </view>
+    <view class="car-nav-item" onTap="toCustomerService">
+      <image mode="scaleToFill" src="/image/goodsDetails/icon-10.png" />
+      <text>客服</text>
+    </view>
+  </view>
+  <view class="bottom-option">
+    <view class="buy" onTap="popupTypeClick">立即租赁</view>
+  </view>
+</view>
+<!-- tabbar -->
+<popup show="{{showPricePopup}}" position="bottom" onClose="popupPriceClick">
+  <view class="popup-content">
+    <view class="goods-prices">
+      <view class="prices-left">月租金</view>
+      <view class="prices-right">￥195.00</view>
+    </view>
+    <view class="goods-prices">
+      <view class="prices-left">首付月数</view>
+      <view class="prices-right">1</view>
+    </view>
+    <view class="goods-prices">
+      <view class="prices-left">押金</view>
+      <view class="prices-right">￥2808.00</view>
+    </view>
+    <view class="goods-prices">
+      <view class="prices-left">信用免押</view>
+      <view class="prices-right">0.00</view>
+    </view>
+  </view>
+</popup>
+<!-- sku选择 -->
+<popup show="{{showTypePopup}}" position="bottom" onClose="popupTypeClick" disableScroll="{{false}}">
+  <view class="popup-type-content">
+    <image mode="scaleToFill" src="/image/goodsDetails/close.png" onTap="popupTypeClick" class="close-popup"/>
+    <scroll-view scroll-y="true" class="popTypeScroll">
+      <view class="pop-top-left">
+        <image mode="scaleToFill" src="/image/goodsDetails/test01.png" />
+        <view class="pop-top-content">
+          <view class="pop-top-content-top">
+            <view class="pop-top-content-top-left">
+                  ￥4.9元/天
+            </view>
+          </view>
+          <view class="pop-top-content-middle">
+               月租金￥90元
+          </view>
+          <view class="pop-top-content-bottom">
+                已选:“9成新,墨蓝色，游匣G3八代i5/8G/512G独显，30天”
+          </view>
+        </view>
+      </view>
+      <view class="typeSelect">
+        <view class="typeSelect-title">颜色</view>
+      </view>
+      <view class="typeSelect-content">
+        <block a:for="{{colorList}}">
+          <view data-id="{{index}}" onTap="itemTypeClick" class="typeSelect-every {{activeTypeIndex == index ?'active-every':''}}">{{item}}</view>
+        </block>
+      </view>
+      <view class="specifiSelect">
+        <view class="specifiSelect-title">规格</view>
+      </view>
+      <view class="specifiSelect-content">
+        <block a:for="{{specifiList}}">
+          <view data-id="{{index}}" onTap="itemSpecifiClick" class="specifiSelect-every {{activeSpecifiIndex == index?'active-every':''}}">{{item}}</view>
+        </block>
+      </view>
+      <view class="timeSelect">
+        <view class="timeSelect-title">租用
+          <label>(最少14天，最多365天)</label></view>
+      </view>
+      <view class="timeSelect-content">
+        <block a:for="{{timeList}}">
+          <view data-id="{{index}}" onTap="itemTimeClick" class="timeSelect-every {{activeTimeIndex == index?'active-every':''}}">{{item}}</view>
+        </block>
+      </view>
+      <view class="custom">
+        <view class="custom-title">自定义租期</view>
+      </view>
+      <view class="custom-content" a:if="{{!showCalendar}}" onTap="changeShowCalendar">
+          按日历选择
+      </view>
+      <view class="custom-date" a:if="{{showCalendar}}">
+        <calendar type="range" onSelect="handleDateSelect" />
+      </view>
+      <view class="rentStartSelect">
+        <view class="rentStartSelect-title">起租日期</view>
+      </view>
+      <view class="rentStartSelect-content">
+        <block a:for="{{rentStartList}}">
+          <view data-id="{{index}}" onTap="itemRentStartClick" class="rentStartSelect-every {{activeRentStartIndex == index?'active-every':''}}">{{item}}</view>
+        </block>
+      </view>
+
+    </scroll-view>
+    <view class="putShopCart">
+      <button size="default" onTap="toOrder">确定</button>
+    </view>
+  </view>
+</popup>
+<!-- sku选择 -->
+
+<popup show="{{showCouponPopup}}" position="bottom" onClose="popupCouponClick" disableScroll="{{false}}">
+  <view class="popup-type-content">
+    <view class="pop-top">
+      <view class="pop-coupon-top-left">
+        优惠券领取
+      </view>
+      <view onTap="popupCouponClick">
+        <am-icon type="close" size="30" color="#e6e6e6" />
+      </view>
+    </view>
+    <view class="coupon-top-bottom">
+      <view class="coupon-top-bottom-left">
+        可领取优惠券
+      </view>
+      <view class="coupon-top-bottom-right" onTap="toCoupon">
+        <view>更多</view>
+        <am-icon type="arrow-right" size="7" />
+      </view>
+    </view>
+    <scroll-view scroll-y="true" class="popCouponScroll">
+      <block a:for="{{couponList}}">
+        <view class="coupon-every">
+          <view class="coupon-left">
+            <view class="coupon-left-top">
+              ￥
+              <text class="coupon-left-top-money">{{item.money}}</text>
+            </view>
+            <view class="coupon-left-bottom">
+              满1999减120
+            </view>
+          </view>
+          <view class="coupon-middle">
+            <view class="coupon-middle-top">平台券</view>
+            <view class="coupon-middle-bottom">满1999立减120</view>
+          </view>
+          <view class="coupon-right">
+            立即领券
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</popup>
+
+<popup show="{{showTipsPopup}}" position="bottom" onClose="popupTipsClick">
+  <view class="popup-tips-content">
+    <view class="popup-tips-title">
+      服务说明
+    </view>
+    <view class="popup-tips-all">
+      <view class="popup-tips-item">
+        <view class="popup-tips-item-title">
+          <am-icon size="15" color="red" type="success-o" />
+          <view>芝麻信用免押金</view>
+        </view>
+        <view class="popup-tips-item-content">
+          信用好，有机会享受押金全面优惠
+        </view>
+      </view>
+      <view class="popup-tips-item">
+        <view class="popup-tips-item-title">
+          <am-icon size="15" color="red" type="success-o" />
+          <view>正品保证</view>
+        </view>
+        <view class="popup-tips-item-content">
+          100%正品保证，杜绝一切假货，让你购物无忧
+        </view>
+      </view>
+      <view class="popup-tips-item">
+        <view class="popup-tips-item-title">
+          <am-icon size="15" color="red" type="success-o" />
+          <view>顺丰寄送</view>
+        </view>
+        <view class="popup-tips-item-content">
+          除海外直邮及个别产品，其他产品均为顺丰寄送
+        </view>
+      </view>
+      <view class="popup-tips-item">
+        <view class="popup-tips-item-title">
+          <am-icon size="15" color="red" type="success-o" />
+          <view>售后电话13398415618</view>
+        </view>
+        <view class="popup-tips-item-content">
+          如遇到产品使用与故障问题欢迎拨打：13369548562
+        </view>
+      </view>
+    </view>
+    <view class="pop-tips-close-btn">
+      关闭
+    </view>
+  </view>
+</popup>

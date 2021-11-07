@@ -1,0 +1,42 @@
+<view class="bill">
+  <view class="bg-top-blue"></view>
+    <view class="top">
+      <view class="top-top">
+        <view class="top-top-left">
+          <view class="top-top-left-top">本期账单</view>
+          <view class="top-top-left-bottom">还款日：09-25</view>
+        </view>
+        <view class="top-top-right">
+          <view class="top-top-right-content">￥540.45</view>
+          <view class="top-top-right-icon">
+            <am-icon type="arrow-right" size="3px" />
+          </view>
+        </view>
+      </view>
+      <view class="top-bottom">
+        <view class="top-bottom-left">
+          <view class="top-bottom-left-top">
+            <view class="top-bottom-left-top-content">剩余应还</view>
+            <view class="top-bottom-left-top-tips">11天后到期</view>
+          </view>
+          <view class="top-bottom-left-bottom">￥<text class="font-big">540</text>.45</view>
+        </view>
+        <view class="top-bottom-payBack">立即还款</view>
+      </view>
+    </view>
+    <view class="bill-list">
+      <block a:for="{{billList}}">
+        <view class="bill-every" onTap="toBillDetail">
+          <view class="every-left">
+            2019年8月账单
+          </view>
+          <view class="every-right">
+            <view class="every-right-money">￥540</view>
+            <view class="every-right-icon">
+              <am-icon type="arrow-right" size="3px" />
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+</view>

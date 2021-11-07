@@ -1,0 +1,20 @@
+<view class="addressList">
+  <block a:for="{{addressList}}">
+    <view class="address-every">
+      <view class="left">
+        <view class="left-top">
+          <view class="userName">张三</view>
+          <view class="userTel">125685795448</view>
+          <view class="native">默认</view>
+        </view>
+        <view class="left-bottom">
+            北京北京市海淀区北京市海淀区中关村生命科技园
+        </view>
+      </view>
+      <view class="right" onTap="toOption">
+        编辑
+      </view>
+    </view>
+  </block>
+  <view class="addAddress" onTap="toOption">新增地址</view>
+</view>

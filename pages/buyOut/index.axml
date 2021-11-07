@@ -1,0 +1,47 @@
+<view class="hr"></view>
+<view class="product-boxs">
+  <image mode="scaleToFill" src="/image/order/shop-img.png"/>
+  <view class="product-info">
+    <view class="product-name">联想(Lenovo)天逸510S 酷睿版 英特尔酷睿i5 台式机电脑整机(i5-10400）</view>
+    <view class="product-specification">规格:黑i5/8GB/320G机械</view>
+    <view class="product-time">原租还时间:2021/06/29-2021/07/28</view>
+    <view class="product-price">原订单租金:￥90</view>
+  </view>
+</view>
+<view class="xuzu-days">
+  <view class="days-row">
+    <text>买断订单详情</text>
+  </view>
+  <view class="days-details">
+    <view class="row">
+      <text>买断总额</text>
+      <view>￥1900</view>
+    </view>
+    <view class="row">
+      <text>已付租金</text>
+      <view>￥90</view>
+    </view>
+    <view class="row">
+      <text>买断尾款</text>
+      <view>￥1810</view>
+    </view>
+  </view>
+</view>
+<view class="leave-message">
+  <text>买家留言:</text>
+  <input placeholder-class="placeholder-leave" placeholder="请在这里留下您的备注" />
+</view>
+<view class="protocol">
+支付即同意
+  <text>《租赁及服务相关协议》</text>
+</view>
+<view class="operting-boxs">
+  <view class="left">
+实付
+    <text>￥
+      <text>1810.00</text></text>
+  </view>
+  <view class="pay-btn">
+确认并支付
+  </view>
+</view>

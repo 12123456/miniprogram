@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "我的",
+  "usingComponents": {
+    "am-icon": "mini-antui/es/am-icon/index",
+    "modal": "mini-antui/es/modal/index"
+  }
+}

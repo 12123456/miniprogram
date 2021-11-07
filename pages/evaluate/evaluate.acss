@@ -1,0 +1,86 @@
+.evaluate {
+  background-color: #fff;
+  padding: 0.3rem;
+}
+
+.top {
+  width: calc(100% - 0.6rem);
+}
+
+.top-left {
+  display: flex;
+}
+
+.rightTitle {
+  margin-top: 0.1rem;
+  font-size: 0.25rem;
+  color: #737373;
+}
+
+.rightContent {
+  margin-left: 0.05rem;
+  font-size: 0.4rem;
+  color: rgb(16, 142, 233);
+}
+
+.rightRatio {
+  margin-top: 0.1rem;
+  color: rgb(16, 142, 233);
+  font-size: 0.25rem;
+}
+/*评论正文*/
+.middle {
+  
+}
+
+.every {
+  margin-top: 0.4rem;
+}
+
+.userMes {
+  display: flex;
+}
+
+.userHeader {
+  border-radius: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.userHeaderImg {
+  width: 100%;
+  height: 100%;
+}
+
+.userName {
+  font-size: 0.25rem;
+  color: #bbbbbb;
+  margin-left: 0.2rem;
+}
+
+.evaluate-content {
+  font-size: 0.3rem;
+  margin-left: 0.5rem;
+  margin-top: 0.15rem;
+}
+
+.evaluate-content-imgAll {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.evaluate-img {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  margin-left: 0.5rem;
+  margin-top: 0.15rem;
+}
+
+.evaluate-goods {
+  font-size: 0.25rem;
+  margin-left: 0.5rem;
+  color: #bbbbbb;
+  margin-top: 0.15rem;
+}

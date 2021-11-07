@@ -1,0 +1,33 @@
+<view class="couponList">
+  <view class="top-tabs">
+    <view data-index="1" class="tab-every  {{activeIndex == 1?'tab-active':''}}" onTap="tabClick">平台券</view>
+    <view data-index="2" class="tab-every  {{activeIndex == 2?'tab-active':''}}" onTap="tabClick">店铺券</view>
+  </view>
+  <view class="tab-list">
+    <view a:key="index" class="{{tabIndex===index?'active-item':''}}" onTap="changeTabs" data-status="{{index}}" a:for="{{['可领取','未使用','已使用','已过期']}}">{{item}}</view>
+  </view>
+  <view class="coupon-container {{'container-'+activeIndex}}">
+    <view class="coupon-every {{'coupon-'+tabIndex}}" a:for="{{couponList}}" a:key="index">
+      <view class="coupon-left">
+        <view>￥
+          <text>80</text></view>
+        <text class="type">{{activeIndex==1?'平台优惠券':'店铺优惠券'}}</text>
+      </view>
+      <view class="coupon-right">
+        <view class="shop-info">
+          <image class="shop-logo" mode="scaleToFill" src="/image/mine/shop-icon.png"/>
+          <text class="shop-name">全民租机旗舰店</text>
+        </view>
+        <view class="title">年租立减500元</view>
+        <view class="man">满81.00元可用</view>
+        <view class="time">有效期:2021.04.27-2021.05.27</view>
+        <text class="btn">{{tabIndex===0?'立即领取':'去使用'}}</text>
+      </view>
+    </view>
+    <view a:if="{{couponList.length===0}}" class="page-bottom">
+      <image mode="scaleToFill" src="/image/mine/no-data.png"/>
+      <view>暂无相关优惠券~
+      </view>
+    </view>
+  </view>
+</view>

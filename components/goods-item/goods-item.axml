@@ -1,0 +1,15 @@
+<navigator class="goods-item" url="/pages/goodsDetail/index?id={{gitem.id}}" a:for="{{list}}" a:for-item="gitem" a:for-index="gindex">
+  <image class="img" src="{{gitem.productUrl}}" background-size="cover"></image>
+  <view class="item-info">
+    <view class="description"><text class="mark">全新</text>{{gitem.title}}</view>
+    <view class="extend">
+      <!-- <view class="left">{{gitem.extend}}</view> -->
+      <view class="price">
+      <text>￥</text>
+      {{gitem.priceInt}}.
+      <text>{{gitem.pricefloat}}/天</text>
+      </view>
+      <view class="right">{{gitem.subtitle}}</view>
+    </view>
+  </view>
+</navigator>

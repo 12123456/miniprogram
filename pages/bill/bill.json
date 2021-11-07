@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "我的账单",
+  "titleBarColor": "#0c79ff",
+  "usingComponents": {
+    "am-icon": "mini-antui/es/am-icon/index"
+  }
+}

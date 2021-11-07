@@ -1,0 +1,66 @@
+.page{
+    background-color: #FFFFFF;
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    padding:0px 15px;
+    box-sizing:border-box
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+}
+.official-title{
+    color: #2C2C2C;
+    font-size: 34rpx;
+    margin-bottom: 22rpx;
+    font-weight: bold;
+}
+.subheading{
+    color: #494949;
+    font-size: 24rpx;
+}
+.photo-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 36rpx;
+}
+.photo-container .photo{
+    width: 130rpx;
+    height: 130rpx;
+    display: flex;
+    flex-direction: column;
+    border: 2rpx dotted #777777;
+    border-radius: 10rpx;
+}
+
+.photo-container .photo .icon{
+    background-position: center;
+    background-image: url(../../image/cameraBtn.png);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    width: 48rpx;
+    height: 48rpx;
+    margin: 20rpx 40rpx 16rpx;
+}
+.photo-container .photo .text{
+    font-size: 22rpx;
+    text-align: center;
+}
+.row4{
+    height: 240rpx;
+    padding: 45px 50px 35px 50px;
+}
+.row4 button{
+    width: 550rpx;
+    height: 80rpx;
+    background-color: #FF4B0C;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    border-radius: 40rpx;
+    color: #fff;
+}

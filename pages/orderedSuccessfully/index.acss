@@ -1,0 +1,202 @@
+page {
+  background-color: #f0f0f0;
+  padding-bottom: 150rpx;
+}
+
+page .header {
+  background: url("../../image/order/icon6.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 280rpx;
+  padding: 50rpx 30rpx 0;
+  box-sizing: border-box;
+}
+
+page .header .status-top {
+  display: flex;
+  align-items: center;
+}
+
+page .header .status-top image {
+  width: 39rpx;
+  height: 39rpx;
+}
+
+page .header .status-top text {
+  margin-left: 17rpx;
+  font-size: 37rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+page .header .tips {
+  margin-top: 28rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  padding-left: 54rpx;
+  box-sizing: border-box;
+}
+
+page .main {
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  margin-top: -56rpx;
+}
+
+page .main .operting {
+  padding: 0 55rpx;
+  box-sizing: border-box;
+  height: 145rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF;
+  border-radius: 10rpx;
+}
+
+page .main .operting text {
+  display: inline-block;
+  text-align: center;
+  width: 280rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #F83A44;
+  border: 1px solid #F83445;
+  border-radius: 5rpx;
+}
+
+page .main .operting text:last-child {
+  background: linear-gradient(90deg, #FA5C3A 0%, #F83445 100%);
+  border-radius: 5rpx;
+  color: #FEFEFE;
+}
+
+page .main .user-info-box {
+  margin-top: 28rpx;
+  background-color: #FFF;
+  border-radius: 10rpx;
+}
+
+page .main .user-info-box .title {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #212121;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: relative;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+
+page .main .user-info-box .title::after {
+  position: absolute;
+  content: ' ';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rpx;
+  background: #E0E0E0;
+}
+
+page .main .user-info-box .boxs-row {
+  padding: 28rpx 30rpx 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+page .main .user-info-box .boxs-row .row-item {
+  display: flex;
+}
+
+page .main .user-info-box .boxs-row .row-item image {
+  width: 75rpx;
+  height: 75rpx;
+}
+
+page .main .user-info-box .boxs-row .row-item .item-right {
+  flex: 1;
+  margin-left: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+page .main .user-info-box .boxs-row .row-item .item-right::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: ' ';
+  right: 0;
+  width: 14rpx;
+  height: 22rpx;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAQAAABXnf4jAAAAAXNSR0IArs4c6QAAAHRJREFUGBkFwS0SQQEABsBNfucNV6EQKBQSifxuZNyFQqEQuApjGIPy2YWVBQBQiq8ZAFRtxccEAOr24m0EAE1H8TQAgMJZPPQAoO0qbjoAtFzEXRegcBIPfYCGg3gZAtTsxNsYoGIjPqYAlOJnDgCsLQHgDzkTJPRjJR71AAAAAElFTkSuQmCC");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+page .main .user-info-box .boxs-row .row-item .item-right view {
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(33, 33, 33, 0.6);
+}
+
+page .main .user-info-box .boxs-row .row-item .item-right .row-title {
+  color: #212121;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+page .main .user-info-box .boxs-row .row-item .item-right .mt15 {
+  margin-top: 15rpx;
+}
+
+page .main .user-info-box .boxs-row .row-item .item-right .color-red {
+  color: #F93946;
+}
+
+page .main .user-info-box .boxs-row .row-item:nth-child(2) {
+  margin-top: 52rpx;
+}
+
+page .main .user-info-box .boxs-row .row-item:nth-child(2) .item-right::after {
+  display: none;
+}
+
+page .main .price-info {
+  margin: 28rpx 0;
+  background-color: #FFF;
+  border-radius: 10rpx;
+}
+
+page .main .price-info .buyout-row:last-child {
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(33, 33, 33, 0.5);
+}
+
+page .main .buyout-row {
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 10rpx;
+  padding: 0 28rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #212121;
+}

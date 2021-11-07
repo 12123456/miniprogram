@@ -1,0 +1,239 @@
+.page {
+  width: 100%;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 200rpx;
+  z-index: 0;
+}
+
+.background image {
+  width: 100%;
+  height: 100%;
+  z-index: auto;
+}
+/* 可滑动块*/
+.allScroll {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.quota {
+  color: #fff;
+  text-align: center;
+  height: 100rpx;
+}
+
+.quotaContent {
+  line-height: 100rpx;
+}
+/* 每项商品 start */
+.goods {
+  width: 100%;
+  padding: 20rpx;
+  margin-bottom: 200rpx;
+}
+
+.goodsEvery {
+  height: 350rpx;
+  width: 90%;
+  border-radius: 10rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.nothing-tips {
+  font-size: 25rpx;
+  color: #737373;
+  text-align: center;
+  margin-bottom: 200rpx;
+}
+/* 标题 */
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleLeft {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleChoose {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 20rpx;
+}
+
+.titleChoose  image{
+  width: 100%;
+  height: 100%;
+}
+
+.titleText {
+  font-weight: bold;
+}
+
+.titleRight {
+  width: 30rpx;
+  height: 30rpx;
+}
+/* 内容 */
+.content {
+  width: 100%;
+  height: 200rpx;
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentChoose {
+  margin-top: 70rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.contentChoose image{
+  width: 100%;
+  height: 100%;
+}
+
+.contentImg {
+  width: 200rpx;
+  height: 150rpx;
+}
+
+.contentImg image{
+  width: 100%;
+  height: 100%;
+}
+
+.contentText {
+  width: 350rpx;
+  height: 200rpx;
+  overflow: hidden;
+  font-size: 25rpx;
+}
+
+.contentTitle {
+  
+}
+
+.contentDes {
+  margin-top: 20rpx;
+  color: #737373;
+}
+/* 操作 */
+.options {
+  width: 100%;
+  height: 70rpx;
+  color: red;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.money {
+  line-height: 50rpx;
+  margin-right: 10rpx;
+}
+
+.time {
+  line-height: 50rpx;
+  border: 1rpx solid red;
+  height: 50rpx;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+  font-size: 25rpx;
+  padding: 0 20rpx;
+}
+
+.number {
+  height: 50rpx;
+  width: 250rpx;
+}
+
+.stepper {
+  width: 100%;
+  height: 100%;
+  border: 1rpx solid #e6e6e6;
+  border-radius: 10rpx;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stepperSubtract {
+  line-height: 50rpx;
+  font-size: 40rpx;
+  text-align: center;
+  width: 60rpx;
+  border-right: 1rpx solid #e6e6e6;
+}
+
+.stepperContent {
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.stepperAdd {
+  line-height: 50rpx;
+  font-size: 40rpx;
+  text-align: center;
+  width: 60rpx;
+  border-left: 1rpx solid #e6e6e6;
+}
+
+/* 每项商品 end */
+
+/* foot start */
+.foot {
+  border-top: 1rpx solid #e6e6e6;
+  background-color: #fff;
+  width: 100%;
+  height: 90rpx;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  line-height: 90rpx;
+}
+
+.footLeft {
+  display: flex;
+  width: 200rpx;
+}
+
+.allChoose {
+  margin-right: 10rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.allChoose image {
+  width: 100%;
+  height: 100%;
+}
+
+.footRight {
+  width: 400rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30rpx;
+}
+
+.settlement {
+  text-align: center;
+  width: 200rpx;
+  border-radius: 50rpx;
+  color: #fff;
+  background-color: #0c79ff;
+  background: linear-gradient(to right, #80b9ff , #0c79ff); /* 标准的语法 */
+}

@@ -1,0 +1,3 @@
+<view class="allEvaluation">
+   <all-evaluation a:for="{{evaluationList}}"></all-evaluation>
+</view>

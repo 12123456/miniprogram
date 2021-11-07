@@ -1,0 +1,75 @@
+<view class="page">
+  <view class="top">
+    <view class="top-up">
+      <view class="top-right" onTap="login">
+        <image mode="scaleToFill" src="{{photoUrl}}"/>
+      </view>
+      <view class="top-left" onTap="login">
+        <view class="userId">{{userName}}</view>
+      </view>
+    </view>
+    <!--<view class="top-down"><view class="equipment"><view class="equipmentName">在租设备</view><view class="equipmentNum">0</view></view><view class="totalAmount"><view class="totalAmountName">总额度</view><view class="totalNum">0</view></view></view> -->
+  </view>
+  <!--<view class="toAddress" onTap="toAddress"><view>收货地址</view><am-icon class="toAddressIcon" type="arrow-right" size='10' /></view> -->
+  <!--<view class="middle-list"><view class="middle-item" a:for="{{middleList}}" a:key="index" onTap="toOrder" data-status="{{index}}"><image mode="scaleToFill" src="{{item.icon}}"/><view class="title">{{item.title}}</view></view></view> -->
+  <view class="middle-list">
+    <view class="list-header">
+      <text>我的订单</text>
+      <view onTap="toOrder" data-status="0">全部订单
+        <am-icon type="right"></am-icon></view>
+    </view>
+    <view class="list-container">
+      <view class="middle-item" a:for="{{middleList}}" a:key="index" onTap="toOrder" data-status="{{item.status}}">
+        <image mode="scaleToFill" src="{{item.icon}}"/>
+        <view class="title">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+  <!--<view class="me-step"><view class="step-top"><view class="step-top-left">
+        最新物流</view><view class="step-top-time">
+        08:35</view></view><view class="step-content"><image mode="scaleToFill" src="/image/test01.png"/><view class="step-content-right"><view class="step-content-top">【{{status}}】</view><view class="step-content-bottom">郑州运输中心发往北京，测试文字测试文字测试文字</view></view></view></view> -->
+  <view class="me-ad" onTap="toSettled">
+    <image mode="scaleToFill" src="../../image/me_AD.png"/>
+  </view>
+  <view class="info-list">
+    <view class="info-item" a:for="{{infoList}}" onTap="selectItem" data-index="{{index}}" a:key="index">
+      <image mode="scaleToFill" src="{{item.icon}}"/>
+      <view class="title">{{item.title}}</view>
+    </view>
+  </view>
+  <view class="good-grid">
+    <view class="h">
+      <image mode="scaleToFill" class="leftStar" src="../../image/grid.png"/>
+      <text class="text">为您推荐</text>
+      <!--<image mode="scaleToFill" class="rightStar" src="../../image/rightStar.png"/> -->
+    </view>
+    <view class="b">
+      <goods-item list="{{goodsList}}"></goods-item>
+    </view>
+  </view>
+
+  <modal show="{{modalServiceOpened}}" showClose="{{false}}" className="modalService">
+    <view class="modal-service-title">
+      联系客服
+    </view>
+    <view class="modal-service-tel">
+      平台客服：
+      <text class="color-blue">13393356984</text>
+    </view>
+    <view class="modal-service-time">
+      工作时间：10:30-19:30
+    </view>
+    <view class="close-btn" onTap="selectItem" data-index="{{8}}">取消拨打</view>
+  </modal>
+  <modal show="{{modalOpened}}" onModalClick="onModalClick" onModalClose="onModalClose" topImage="https://gw.alipayobjects.com/zos/rmsportal/yFeFExbGpDxvDYnKHcrs.png">
+    <view slot="header">标题单行</view>
+    说明当前状态、提示用户解决方案，最好不要超过两行。
+    <view slot="footer">确定</view>
+  </modal>
+</view>
+<button open-type="getAuthorize" onGetAuthorize="onGetAuthorize" onError="onAuthError" scope='userInfo'>
+    会员基础信息授权
+</button>
+<button open-type="getAuthorize" onGetAuthorize="onGetAuthorize" onError="onAuthError" scope='phoneNumber'>
+    授权手机号
+</button>

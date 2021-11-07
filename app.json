@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/index",
+    "pages/cart/index",
+    "pages/category/index",
+    "pages/goodsList/goodsList",
+    "pages/goodsDetail/index",
+    "pages/evaluate/evaluate",
+    "pages/orderList/index",
+    "pages/search/search",
+    "pages/store/index",
+    "pages/logistics/index",
+    "pages/orderDetail/index",
+    "pages/categoryList/index",
+    "pages/afterSale/index",
+    "pages/comment/comment",
+    "pages/order/index",
+    "pages/addressList/index",
+    "pages/addressOption/index",
+    "pages/couponList/index",
+    "pages/helpme/index",
+    "pages/feedback/index",
+    "pages/buyOut/index",
+    "pages/settled/settled",
+    "pages/bill/bill",
+    "pages/billDetail/index",
+    "pages/billDetailItem/index",
+    "pages/register/index",
+    "pages/idInfor/index",
+    "pages/realNameRegister/index",
+    "pages/OtherMateiral/index",
+    "pages/allEvaluation/index",
+    "pages/orderedSuccessfully/index",
+    "pages/leaseRenewal/index",
+    "pages/returnItems/index",
+    "pages/roderStaging/index",
+    "pages/buyOutOld/index"
+  ],
+  "window": {
+    "defaultTitle": "全民租机",
+    "gestureBack": "YES",
+    "allowsBounceVertical": "NO"
+  },
+  "tabBar": {
+    "textColor": "#dddddd",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "icon": "image/index.png",
+        "activeIcon": "image/index_T.png",
+        "name": "首页"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "icon": "image/category.png",
+        "activeIcon": "image/category_T.png",
+        "name": "分类"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "icon": "image/me.png",
+        "activeIcon": "image/me_T.png",
+        "name": "我的"
+      }
+    ]
+  }
+}

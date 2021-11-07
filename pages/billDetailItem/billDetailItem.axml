@@ -1,0 +1,58 @@
+<view>
+  <notice mode="closable" enableMarquee="{{true}}" onClick="linkClick" marqueeProps="{{loop: true, leading: 500, trailing: 800, fps: 40 }}">您的还款日还有4天，请注意还款时间，以免逾期</notice>
+  <view class="top">
+    <view class="top-top">
+      <image mode="scaleToFill" src="../../image/test01.png"/>
+      <view class="top-top-right">
+        <view class="top-top-right-name">佳能18-55m 3.35-3.55二代镜头</view>
+        <view class="top-top-right-type">规格：黑色牛逼</view>
+        <view class="top-top-right-money">总租金：￥517.50</view>
+      </view>
+    </view>
+    <view class="top-bottom">
+      <view class="top-bottom-item">
+        <view class="top-bottom-item-top">517.50</view>
+        <view class="top-bottom-item-bottom">应还租金（元）</view>
+      </view>
+      <view class="top-bottom-item">
+        <view class="top-bottom-item-top">517.50</view>
+        <view class="top-bottom-item-bottom">已还租金（元）</view>
+      </view>
+      <view class="top-bottom-item">
+        <view class="top-bottom-item-top">517.50</view>
+        <view class="top-bottom-item-bottom">未还租金（元）</view>
+      </view>
+    </view>
+  </view>
+  <view class="list-title">
+    <view class="list-title-left">提前归还本金</view>
+    <view class="list-title-right">￥84.22>></view>
+  </view>
+  <block>
+    <view class="item-every">
+      <view class="item-top">
+        <view class="item-top-left">
+          <view class="item-top-left-top">2/12期</view>
+          <view class="item-top-left-bottom">￥42.35</view>
+        </view>
+        <view class="item-top-right">
+          <am-icon a:if="{{checkShow}}" type="circle" size='18' />
+          <image a:if="{{!checkShow}}" mode="scaleToFill" src="../../image/selected.png"/>
+        </view>
+      </view>
+      <view class="item-bottom">
+        <view class="item-bottom-left">还款时间：22019.12.5</view>
+        <view class="item-bottom-right">待还款</view>
+      </view>
+    </view>
+  </block>
+  <view class="page-bottom-title">已还本金</view>
+  <view class="page-bottom-type">
+    <view>12/21期</view>
+    <view>已还款</view>
+  </view>
+  <view class="page-bottom-money">
+    <view>￥43.00</view>
+    <view class="page-bottom-money-right">还款时间：2019年9月12日</view>
+  </view>
+</view>

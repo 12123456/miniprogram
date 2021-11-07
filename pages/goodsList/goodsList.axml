@@ -1,0 +1,56 @@
+<view class="search-result">
+  <view class="sort-box">
+    <!--<view class="item good-select {{currentSortType == 'default' ? 'active' : ''}}" onTap="openSortFilter" id="defaultSort"><text class="txt">{{bandName}}</text></view><view class="item by-price {{currentSortType == 'price' ? 'active' : ''}} {{currentSortOrder == 'asc'  ? 'asc' : 'desc'}}" onTap="openSortFilter" id="priceSort"><text class="txt">销量</text></view><view class="item by-price {{currentSortType == 'price' ? 'active' : ''}} {{currentSortOrder == 'asc'  ? 'asc' : 'desc'}}" onTap="openSortFilter" id="priceSort"><text class="txt">价格</text></view><view class="item filter {{currentSortType == 'filter' ? 'active' : ''}}" onTap="openTranslate" id="categoryFilter"><text class="txt">筛选</text></view> -->
+    <!--<view class="sort-box-category" a:if="{{categoryFilter}}"><view class="item {{item.checked ? 'active' : ''}}" a:for="{{filterCategory}}" a:key="cate-{{item.id}}" data-category-index="{{index}}" onTap="selectCategory">{{item.name}}</view></view> -->
+    <view class="left" onTap="openSortFilter">
+      <text data-index="0" class="{{sortIndex===0?'text-active':''}}">综合</text>
+      <text data-index="1" class="{{sortIndex===1?'text-active':''}}">销量</text>
+      <text data-index="2" class="{{sortIndex===2?'text-active':''}}">价格</text>
+    </view>
+    <view class="right" onTap="openTranslate">筛选<image mode="scaleToFill" src="../../image/filter.png"/></view>
+  </view>
+  <view class="cate-item">
+    <goods-item list="{{goodsList}}"></goods-item>
+  </view>
+  <view class="bottomTips">亲没有更多了哦！</view>
+</view>
+<popup show="{{isRuleTrue}}" position="right" onClose="onPopupClose">
+  <view class="condition">
+    <view class="rows-box">
+      <view class="rows">
+        <view class='iconuse'>快捷筛选</view>
+        <view class="useage">
+          <view class="li {{item.checked?'checked_parameter':''}}" onTap="quickOrderTap" a:for="{{quickList}}" a:for-item="item" a:for-index="index" data-id='{{item.id}}'>{{item.name}}</view>
+        </view>
+      </view>
+      <view class="rows">
+        <view class='iconuse'>起租日</view>
+        <view class="useage">
+          <view a:for="{{rentStartList}}" a:for-item="item" class="li {{item.checked?'checked_parameter':''}}" onTap="rentStartTap" data-id='{{item.id}}'>{{item.name}}</view>
+        </view>
+      </view>
+      <view class="rows">
+        <view class='iconuse'>押金范围</view>
+        <view class="useage useage-two">
+          <view class="li {{item.checked?'checked_parameter':''}}" onTap="priceOrderTap" a:for="{{priceOrderList}}" a:for-item="item" a:for-index="index" data-id='{{item.id}}'>{{item.name}}</view>
+        </view>
+      </view>
+      <view class="rows">
+        <view class='iconuse'>租满即送</view>
+        <view class="useage  useage-two">
+          <view class="li {{item.checked?'checked_parameter':''}}" onTap="rentfullTap" a:for="{{rentfullList}}" a:for-item="item" a:for-index="index" data-id='{{item.id}}'>{{item.name}}</view>
+        </view>
+      </view>
+      <view class="rows">
+        <view class='iconuse'>发货地</view>
+        <view class="useage">
+          <view class="li {{item.checked?'checked_parameter':''}}" onTap="addressTap" a:for="{{addressList}}" a:for-item="item" a:for-index="index" data-id='{{item.id}}'>{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='operating'>
+      <text class="reset-btn">重置</text>
+      <text class="carry-out" onTap="carryOut">确定</text>
+    </view>
+  </view>
+</popup>

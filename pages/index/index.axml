@@ -1,0 +1,158 @@
+<view class="page">
+  <view class="search">
+    <view class="classification">
+      <image mode="scaleToFill" src="../../image/index-icon1.png" />
+      <text>分类</text>
+    </view>
+    <view class="search-input" onTap="toSearch">
+      <am-icon type="search" size="2px" color="#b1b1b1" />
+      <input disabled placeholder-class="placeholder-search" placeholder="搜索你想要的商品" />
+    </view>
+    <view class="customer">
+      <image mode="scaleToFill" src="../../image/index-icon2.png" />
+      <text>客服</text>
+    </view>
+  </view>
+  
+  <swiper class="lbtSwiper" indicator-dots="{{true}}" autoplay="{{false}}" interval="{{3000}}" duration="{{1200}}" circular="{{true}}">
+    <swiper-item class="swiper-item" a:for="{{swipers}}" key="swiper-item-{{index}}">
+      <image src="{{item.image}}" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+  
+  <view class="slogan-container">
+    <view class="left">
+      <text class="slogan">租电脑、手机比买更划算</text>
+      <view class="character-container">
+        <view class="character">
+          <image mode="scaleToFill" src="../../image/low.png" />
+          <text class="text">超低租金</text>
+        </view>
+        <view class="character">
+          <image mode="scaleToFill" src="../../image/express.png" />
+          <text class="text">信用免押</text>
+        </view>
+        <view class="character">
+          <image mode="scaleToFill" src="../../image/credit.png" />
+          <text class="text">顺丰邮寄</text>
+        </view>
+      </view>
+    </view>
+    <view class="right">
+      <image mode="scaleToFill" src="../../image/btnstrategy.png" />
+    </view>
+  </view>
+  
+  <!--导航按钮 -->
+  <view class="big-logo">
+    <view class="logoinfo" a:for="{{logos}}" a:key="index" onTap="classClick" data-type="{{item.title}}">
+      <image src="{{item.imgPath}}" mode="aspectFit" />
+      <text class="logotext">{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 新品速报 -->
+  <view class="new-product">
+    <view class="title">新品速报</view>
+    <view class="content">
+      <swiper class="xbSwiper" indicator-dots="{{true}}" autoplay="{{false}}" interval="{{3000}}" duration="{{1200}}" circular="{{true}}">
+        <swiper-item class="swiper-item box-item" a:for="{{newStudiesList}}" key="swiper-item-{{index}}">
+          <image src="{{item.productUrl}}" mode="aspectFill" />
+          <view class="info">
+            <view class="name">{{item.title}}</view>
+            <view class="need">{{item.subtitle}}</view>
+            <view class="price">￥
+              <text class="tit">{{item.price}}</text>/天</view>
+          </view>
+          <image class="bannerImage" mode="aspectFill" src="{{item.backBanner}}" />
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <!-- 新品速报 -->
+  <view class="new-go">
+    <view class="m-left part">
+      <view class="name">
+        {{goodsList[0].title}}
+      </view>
+      <view class="tips">
+        {{goodsList[0].subtitle}}
+      </view>
+      <image class="m-leftImg" mode="scaleToFill" src="{{goodsList[0].productUrl}}" />
+    </view>
+    <view class="m-right">
+      <view class="part">
+        <view class="name">
+          {{goodsList[1].title}}
+        </view>
+        <view class="tips">
+          {{goodsList[1].subtitle}}
+        </view>
+        <image mode="scaleToFill" src="{{goodsList[1].productUrl}}" class="rightImg" />
+      </view>
+      <view class="part mt-28">
+        <view class="name">
+          {{goodsList[2].title}}
+        </view>
+        <view class="tips">
+          {{goodsList[2].subtitle}}
+        </view>
+        <image mode="scaleToFill" src="{{goodsList[2].productUrl}}" class="rightImg" />
+      </view>
+    </view>
+  </view>
+  <!-- 限时抢租 -->
+  <view class="page-margin">
+    <view class="title">限时抢购</view>
+    <scroll-view class="moveTransverse" scroll-x="true">
+      <block a:for="{{quicks}}">
+        <view class="content" onTap="toGoodsDetail">
+          <view class="page-column contentEvery">
+            <view class="discount">{{item.subtitle}}</view>
+            <image class="goodsImg" src="{{item.productUrl}}" mode="aspectFill" />
+            <view class="goodsTitle">
+              <image class="goodsTitleIcon" mode="aspectFit" src="/image/qzTitle.png" />
+              <view class="goodsTitleText">{{item.title}}</view>
+            </view>
+            <view class="goodsPrice">￥{{item.price}}/天起</view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <!-- 推荐 -->
+  <view class="cate-nav" style="top: {{top}}px">
+    <scroll-view scroll-x="true" class="cate-nav-body" scroll-left="{{scrollLeft}}">
+      <view a:for="{{navList}}" class="item {{ recommendId == item.id ? 'active' : ''}}" data-id="{{item.id}}" data-index="{{index}}" 
+        onTap="switchCate">
+        <view style="text-align: center;">
+          <view class="title" style="font-weight: bold;font-size: 18px;margin-bottom: 6px;"> {{item.title}}</view>  
+          <view class="subtitle" style="color: gray;font-size: 14px;margin: 0 3px;">
+                {{item.subTitle}}
+          </view>       
+        </view>
+      
+      </view>
+    </scroll-view>
+    <!--<button class="btn-classify" onTap="classsifyClick"></button> -->
+  </view>
+  
+  <popup show="{{showTop}}" position="top" onClose="onPopupClose">
+    <view class="box top">
+      <view class="classify-title">
+        <view class="title-container">
+          <text style="margin-bottom:20rpx;">分类</text>
+          <button class="classify-close" onTap="onPopupClose"></button>
+        </view>
+      </view>
+      <view class="classify-content">
+        <button a:for="{{navList}}" class="{{item.id}}" data-id="{{item.id}}" onTap="clickClassifytBtn">{{item.name}}</button>
+      </view>
+    </view>
+  </popup>
+  <scroll-view scroll-y="true" scroll-top="{{scrollTop}}">
+    <view class="cate-item">
+      <goods-item list="{{goodsList}}"></goods-item>
+      <!--<navigator class="item" a:for="{{}}" a:for-item="item" a:for-index="index"><image class="img" src="{{item.img}}" background-size="cover"></image><view class="cate-info"><text class="cate-name">{{item.title}}</text><view class="cate-bottom"><text class="price">{{item.priceInt}}.<text>{{item.priceFloat}}/天</text></text><text class="days">{{item.days}}</text></view></view></navigator> -->
+    </view>
+  </scroll-view>
+</view>

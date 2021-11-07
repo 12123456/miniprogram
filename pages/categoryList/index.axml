@@ -1,0 +1,38 @@
+<view class="categoryList">
+  <view class="top">
+    <view class="top-type">
+      <scroll-view class="top-scroll" scroll-x="{{true}}">
+        <view class="bjb" data-id="1" style="{{activeIndex == 1 ? 'font-weight: bold' : 'font-weight: normal'}}" onTap="tabClick">笔记本</view>
+        <view class="tsj" data-id="2" style="{{activeIndex == 2 ? 'font-weight: bold' : 'font-weight: normal'}}" onTap="tabClick">台式机</view>
+        <view class="dyj" data-id="3" style="{{activeIndex == 3 ? 'font-weight: bold' : 'font-weight: normal'}}" onTap="tabClick">打印/复印机</view>
+        <view class="dnpj" data-id="4" style="{{activeIndex == 4 ? 'font-weight: bold' : 'font-weight: normal'}}" onTap="tabClick">电脑配件</view>
+        <view class="ydsb" data-id="5" style="{{activeIndex == 5 ? 'font-weight: bold' : 'font-weight: normal'}}" onTap="tabClick">移动设备</view>
+        <view class="smyl" data-id="6" style="{{activeIndex == 6 ? 'font-weight: bold' : 'font-weight: normal'}}" onTap="tabClick">数码娱乐</view>
+      </scroll-view>
+      <image onTap="toSearch" class="top-search" mode="scaleToFill" src="../../image/search_circle.png"/>
+    </view>
+    <view class="top-choose">
+      <view class="top-choose-new">全新</view>
+      <view class="top-choose-old">非全新</view>
+    </view>
+  </view>
+  <view class="middle">
+    <scroll-view class="scroll" scroll-y="{{true}}">
+      <block a:for="{{goodsList}}">
+        <view class="scroll-content">
+          <image mode="aspectFill" src="{{item.img}}"/>
+          <view class="goodsTitle">{{item.title}}</view>
+          <view class="goods-middle">
+            <view class="price">{{item.price}}</view>
+            <view class="condition">{{item.condition}}</view>
+          </view>
+          <view class="goods-bottom">
+            <view class="tip1">非全新</view>
+            <view class="tip2">租完即送</view>
+          </view>
+        </view>
+      </block>
+      <view class="bottomTips">亲没有更多了哦！</view>
+    </scroll-view>
+  </view>
+</view>

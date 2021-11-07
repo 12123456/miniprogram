@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "归还",
+   "usingComponents": {
+    "am-icon": "mini-ali-ui/es/am-icon/index"
+  }
+}

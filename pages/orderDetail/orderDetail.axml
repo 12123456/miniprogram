@@ -1,0 +1,154 @@
+<view class="orderDetail">
+  <view class="pageTopTips">
+    卖家发货后，需要买家确认收货后才能收到钱款
+  </view>
+  <view class="process">
+    <view a:if="{{step1}}" class="stepEvery">
+      <image mode="scaleToFill" src="../../image/orderStep1T.png"/>
+      <view class="stepTitle">已租赁</view>
+    </view>
+    <view a:if="{{!step1}}" class="stepEvery">
+      <image mode="scaleToFill" src="../../image/orderStep1F.png"/>
+      <view class="stepTitle">待租赁</view>
+    </view>
+    <view a:if="{{step2}}" class="stepEvery">
+      <image mode="scaleToFill" src="../../image/orderStep2T.png"/>
+      <view class="stepTitle">已付款</view>
+    </view>
+    <view a:if="{{!step2}}" class="stepEvery">
+      <image mode="scaleToFill" src="../../image/orderStep2F.png"/>
+      <view class="stepTitle">待付款</view>
+    </view>
+    <view a:if="{{step3}}" class="stepEvery">
+      <image mode="scaleToFill" src="../../image/orderStep3T.png"/>
+      <view class="stepTitle">已发货</view>
+    </view>
+    <view a:if="{{!step3}}" class="stepEvery">
+      <image mode="scaleToFill" src="../../image/orderStep3F.png"/>
+      <view class="stepTitle">待发货</view>
+    </view>
+    <view a:if="{{step4}}" class="stepEvery">
+      <image mode="scaleToFill" src="../../image/orderStep4T.png"/>
+      <view class="stepTitle">已收货</view>
+    </view>
+    <view a:if="{{!step4}}" class="stepEvery">
+      <image mode="scaleToFill" src="../../image/orderStep4F.png"/>
+      <view class="stepTitle">待收货</view>
+    </view>
+  </view>
+  <view class="stepMes">
+    <view class="stepMes-content">
+      卖家已发货，待买家确认收货
+    </view>
+    <view class="stepMes-tips">
+      2天14小时30分钟<text class="color-grey">后将自动确认收货</text>
+    </view>
+  </view>
+  <view class="logistics-Mes">
+    <view class="logistics-title">
+      物流信息
+    </view>
+    <view class="logistics-top">
+      <view class="logistics-top-left">
+        <image mode="scaleToFill" src="../../image/orderLogistics.png"/>
+        <view class="logistics-top-content">
+          <view class="logistics-top-content-top">货物已由本人签收，感谢您选择京东物流！</view>
+          <view class="logistics-top-content-bottom">2019-08-26</view>
+        </view>
+      </view>
+      <am-icon class="logistics-top-icon" type="arrow-right" size="10" />
+    </view>
+    <view class="logistics-bottom">
+      <image mode="scaleToFill" src="../../image/orderLogisticsAddress.png"/>
+      <view class="logistics-bottom-content">
+        <view class="logistics-bottom-content-top">收货人：张三 15826262626</view>
+        <view class="logistics-bottom-content-bottom">山东省 威海市 缓存区 金鹰大厦1024楼</view>
+      </view>
+    </view>
+  </view>
+  <view class="goods-mes">
+    <view class="goods-mes-title">
+      <image mode="scaleToFill" src="../../image/companyLogo.png"/>
+      <view class="goods-mes-company">大连何鑫网络有限公司</view>
+      <view class="goods-mes-toName">李四</view>
+    </view>
+    <view class="goods-mes-content">
+      <image mode="scaleToFill" src="../../image/test02.png"/>
+      <view class="goods-mes-content-middle">
+        <view class="goods-mes-middle-title">
+          thinkPaid笔记本T410 最新T410 怎么怎么滴是怎么怎么狠啊
+        </view>
+        <view class="goods-mes-middle-price">
+          ￥<text>6700.00</text>
+        </view>
+      </view>
+      <am-icon type="arrow-right" size="10" />
+    </view>
+  </view>
+  <view class="goods-price">
+    <view class="goods-allPrice">
+      <view class="goods-allPrice-title">商品总额</view>
+      <view class="goods-allPrice-content">￥6270.00</view>
+    </view>
+    <view class="goods-freight">
+      <view class="goods-freight-title">运费</view>
+      <view class="goods-freight-content">+0.00</view>
+    </view>
+    <view class="allPrice">
+      <view class="allPrice-content">
+        支付总额：<text class="font-weight">￥6270.00</text>
+      </view>
+    </view>
+    <view class="goods-price-bottom">
+      <view class="contact-btn">联系卖家</view>
+    </view>
+  </view>
+  <view class="order-mes">
+    <view class="order-mes-title">
+      订单信息
+    </view>
+    <view class="order-mes-content">
+      <view class="order-every">
+        <view class="order-every-title">
+          订单编号
+        </view>
+        <view class="order-every-content order-code-content">
+          <view class="order-code-detail">{{orderCode}}</view>
+          <view class="copy-btn" onTap="doCopy">复制</view>
+        </view>
+      </view>
+      <view class="order-every">
+        <view class="order-every-title">
+          支付方式
+        </view>
+        <view class="order-every-content">
+          支付宝支付
+        </view>
+      </view>
+      <view class="order-every">
+        <view class="order-every-title">
+          下单时间
+        </view>
+        <view class="order-every-content">
+          2019-08-08 10：50:54
+        </view>
+      </view>
+      <view class="order-every">
+        <view class="order-every-title">
+          支付时间
+        </view>
+        <view class="order-every-content">
+          2019-08-08 10：50:54
+        </view>
+      </view>
+      <view class="order-every">
+        <view class="order-every-title">
+          发货时间
+        </view>
+        <view class="order-every-content">
+          2019-08-08 10：50:54
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

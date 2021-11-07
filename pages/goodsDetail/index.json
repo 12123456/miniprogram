@@ -1,0 +1,13 @@
+{
+  "defaultTitle": "商品详情",
+  "usingComponents": {
+    "list": "mini-ali-ui/es/list/index",
+    "list-item": "mini-ali-ui/es/list/list-item/index",
+    "am-icon": "mini-ali-ui/es/am-icon/index",
+    "tabs": "mini-ali-ui/es/tabs/index",
+    "tab-content": "mini-ali-ui/es/tabs/tab-content/index",
+    "popup": "mini-ali-ui/es/popup/index",
+    "calendar": "mini-ali-ui/es/calendar/index",
+    "all-evaluation": "/components/comment-item/comment-item"
+  }
+}

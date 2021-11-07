@@ -1,0 +1,8 @@
+{
+  "defaultTitle": "我的",
+  "usingComponents": {
+    "am-icon": "mini-ali-ui/es/am-icon/index",
+    "modal": "mini-ali-ui/es/modal/index",
+    "goods-item": "/components/goods-item/goods-item"
+  }
+}

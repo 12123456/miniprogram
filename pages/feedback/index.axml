@@ -1,0 +1,34 @@
+<view class="feedback">
+  <textarea class="textArea-own" placeholder-class="placeholder-textArea" placeholder="官人，请您详细反馈问题~" />
+  <view class="backTypeTitle">
+    <view class="row">
+      <view class="title">图片上传
+        <text>(上传聊天截图或与问题描述相关得图片)</text>
+      </view>
+      <view class="picture-content">
+        <view class="FileList-item" a:for="{{FileList}}" a:key="index">
+          <image mode="scaleToFill" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2819709235,2100455286&fm=26&gp=0.jpg"/>
+        </view>
+        <view class="img-box" onTap="openCamera">
+          <image mode="scaleToFill" src="/image/mine/camera.png"/></view>
+      </view>
+    </view>
+    <view class="row">
+      <view class="title require">联系方式</view>
+      <input class="name" maxlength="18" placeholder-class="pl" placeholder="请填写您的姓名" />
+      <input class="phone" maxlength="36" placeholder-class="pl" placeholder="请填写您的电话或邮箱" />
+    </view>
+    <view class="submit-btn" onTap="submit">提交</view>
+  </view>
+</view>
+<view class="black-bg" a:if="{{showModal}}">
+  <view class="modal-content">
+    <view class="modal-pic">
+      <view class="modal-tips">提交成功</view>
+      <view class="goShopping" onTap="goShopping">去逛逛</view>
+    </view>
+    <view class="close-btn" onTap="closeModal">
+      <am-icon type="close-o" size="30" color="#fff" />
+    </view>
+  </view>
+</view>

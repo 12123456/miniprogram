@@ -1,0 +1,104 @@
+page {
+  background-color: #fff;
+}
+
+.top-tabs {
+  display: flex;
+  width: 100%;
+  margin: 40rpx 0;
+}
+
+.tab-every {
+  width: 50%;
+  height: 50rpx;
+  font-weight: bold;
+  text-align: center;
+  font-size: 35rpx;
+  line-height: 50rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+}
+
+.couponList {
+  font-size: 25rpx;
+}
+
+.coupon-every {
+  display: flex;
+  width: 95%;
+  margin: 18rpx auto;
+  box-shadow:0px 0px 15rpx #dadada;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+
+.coupon-left {
+  width: 75%;
+  border-right: 1rpx dashed #737373;
+}
+
+.coupon-type {
+  border-bottom-right-radius: 20rpx;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 100rpx;
+}
+
+.coupon-content {
+  padding: 0 50rpx;
+  display: flex;
+  margin-bottom: 50rpx;
+}
+
+.coupon-content image {
+  width: 80rpx;
+  height: 80rpx;
+  margin: auto 0;
+}
+
+.coupon-content-right {
+  margin-left: 50rpx;
+  font-size: 30rpx;
+  width: 280rpx;
+}
+
+.coupon-money {
+  color: red;
+}
+
+.coupon-yh-money {
+  font-size: 35rpx;
+  margin-right: 10rpx;
+}
+
+.coupon-tips {
+  font-size: 20rpx;
+  color: #737373;
+  margin-top: 20rpx;
+  line-height: 30rpx;
+}
+
+.coupon-right {
+  width: calc(25% - 1rpx);
+}
+
+.just-btn {
+  width: 130rpx;
+  color: #fff;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: red;
+  border-radius: 25rpx;
+  margin: 82.5rpx auto;
+}
+
+.page-bottom {
+  margin-top: 30rpx;
+  font-size: 20rpx;
+  color: #737373;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,112 @@
+<view class="comment">
+		  <view class="top">
+        <image class="goods-img" mode="scaleToFill" src="/image/test01.png"/>
+        <view class="check-type">
+          <view a:if="{{!topGood}}" class="good-F" onTap="faceClick('good')">
+            <image mode="scaleToFill" src="../../image/evaluate1_F.png"/>
+            <view class="false-title">好评</view>
+          </view>
+          <view a:if="{{topGood}}" class="good-T" onTap="faceClick('good')">
+            <image mode="scaleToFill" src="../../image/evaluate1_T.png"/>
+            <view class="true-title">好评</view>
+          </view>
+          <view a:if="{{!topMid}}" class="mid-F" onTap="faceClick('mid')">
+            <image mode="scaleToFill" src="../../image/evaluate2_F.png"/>
+            <view class="false-title">中评</view>
+          </view>
+          <view a:if="{{topMid}}" class="mid-T" onTap="faceClick('mid')">
+            <image mode="scaleToFill" src="../../image/evaluate2_T.png"/>
+            <view class="true-title">中评</view>
+          </view>
+          <view a:if="{{!topLow}}" class="low-F" onTap="faceClick('low')">
+            <image mode="scaleToFill" src="../../image/evaluate3_F.png"/>
+            <view class="false-title">差评</view>
+          </view>
+          <view a:if="{{topLow}}" class="low-T" onTap="faceClick('low')">
+            <image mode="scaleToFill" src="../../image/evaluate3_T.png"/>
+            <view class="true-title">差评</view>
+          </view>
+        </view>
+		  </view>
+		  <view class="comment-content">
+			<view class="mui-input-row">
+				<textarea class="textArea" rows="8" placeholder="租品满足您的期待吗？说说它的优点和美中不足的地方吧..."></textarea>
+			</view>
+			<view class="textArea-bottom" id= 'doMedia'>
+				<view class="addPicture" onTap="addPicture()">
+				  <image mode="scaleToFill" src="../../image/picture.png"/>
+				  <view class="picture-title" id="addPicTitle">添加图片</view>
+				</view>
+				<view id="addVideo" onTap="addVideo()">
+				  <image mode="scaleToFill" src="../../image/video.png"/>
+				  <view class="picture-title">添加视频</view>
+				</view>
+			</view>
+		  </view>
+		  <view class="after-text">
+			<view class="after-text-left" onTap="doNM()">
+			  <image a:if="{{!anonymous}}" class="anonymous-F" src="../../image/unselected.png" />
+			  <image a:if="{{anonymous}}" class="anonymous-T" src="../../image/right.png" />
+			  <view class="after-text-left-title">匿名</view>
+			</view>
+			<view class="after-text-right">
+			  公开的评价会帮助更多的人哦
+			</view>
+		  </view>
+		  <view class="comment-bottom">
+			<view class="bottom-title">
+			  店铺评价
+			</view>
+			<view class="check">
+			  <view class="title">描述相符</view>
+			  <view class="check-content">
+				<image a:if="{{!checkImg11}}" class="checkImg1-1" mode="scaleToFill" onTap="checkClick1('1')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg11}}" class="checkImg1-2" mode="scaleToFill" onTap="checkClick1('1')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg12}}" class="checkImg1-3" mode="scaleToFill" onTap="checkClick1('2')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg12}}" class="checkImg1-4" mode="scaleToFill" onTap="checkClick1('2')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg13}}" class="checkImg1-5" mode="scaleToFill" onTap="checkClick1('3')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg13}}" class="checkImg1-6" mode="scaleToFill" onTap="checkClick1('3')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg14}}" class="checkImg1-7" mode="scaleToFill" onTap="checkClick1('4')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg14}}" class="checkImg1-8" mode="scaleToFill" onTap="checkClick1('4')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg15}}" class="checkImg1-9" mode="scaleToFill" onTap="checkClick1('5')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg15}}" class="checkImg1-10" mode="scaleToFill" onTap="checkClick1('5')" src="../../image/star_T.png"/>
+			  </view>
+			  <view class="check-tips1">好</view>
+			</view>
+			<view class="check">
+			  <view class="title">物流服务</view>
+			  <view class="check-content">
+				<image a:if="{{!checkImg21}}" class="checkImg2-1" mode="scaleToFill" onTap="checkClick2('1')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg21}}" class="checkImg2-2" mode="scaleToFill" onTap="checkClick2('1')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg22}}" class="checkImg2-3" mode="scaleToFill" onTap="checkClick2('2')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg22}}" class="checkImg2-4" mode="scaleToFill" onTap="checkClick2('2')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg23}}" class="checkImg2-5" mode="scaleToFill" onTap="checkClick2('3')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg23}}" class="checkImg2-6" mode="scaleToFill" onTap="checkClick2('3')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg24}}" class="checkImg2-7" mode="scaleToFill" onTap="checkClick2('4')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg24}}" class="checkImg2-8" mode="scaleToFill" onTap="checkClick2('4')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg25}}" class="checkImg2-9" mode="scaleToFill" onTap="checkClick2('5')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg25}}" class="checkImg2-10" mode="scaleToFill" onTap="checkClick2('5')" src="../../image/star_T.png"/>
+			  </view>
+			  <view class="check-tips2">好</view>
+			</view>
+			<view class="check">
+			  <view class="title">服务态度</view>
+			  <view class="check-content">
+				<image a:if="{{!checkImg31}}" class="checkImg3-1" mode="scaleToFill" onTap="checkClick3('1')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg31}}" class="checkImg3-2" mode="scaleToFill" onTap="checkClick3('1')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg32}}" class="checkImg3-3" mode="scaleToFill" onTap="checkClick3('2')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg32}}" class="checkImg3-4" mode="scaleToFill" onTap="checkClick3('2')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg33}}" class="checkImg3-5" mode="scaleToFill" onTap="checkClick3('3')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg33}}" class="checkImg3-6" mode="scaleToFill" onTap="checkClick3('3')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg34}}" class="checkImg3-7" mode="scaleToFill" onTap="checkClick3('4')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg34}}" class="checkImg3-8" mode="scaleToFill" onTap="checkClick3('4')" src="../../image/star_T.png"/>
+				<image a:if="{{!checkImg35}}" class="checkImg3-9" mode="scaleToFill" onTap="checkClick3('5')" src="../../image/star_F.png"/>
+				<image a:if="{{checkImg35}}" class="checkImg3-10" mode="scaleToFill" onTap="checkClick3('5')" src="../../image/star_T.png"/>
+			  </view>
+			  <view class="check-tips3">好</view>
+			</view>
+		  </view>
+		  <view class="action-btn">
+			  发布
+		  </view>
+		</view>

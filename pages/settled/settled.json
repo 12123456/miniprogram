@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "商家入驻",
+  "usingComponents": {
+    "am-icon": "mini-antui/es/am-icon/index"
+  }
+}

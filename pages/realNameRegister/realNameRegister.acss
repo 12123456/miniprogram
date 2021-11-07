@@ -1,0 +1,75 @@
+.page{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%
+}
+
+.form{
+    width: 100%;
+    height: 1190rpx;
+}
+
+
+.form-line{
+    height:1px;
+    background-color:rgb(221, 221, 221);
+    margin-left:34rpx;
+    margin-right:34rpx;
+}
+
+.form-row{
+    display:flex;
+    -webkit-box-align:center;
+    padding:0px 0.3rem;
+    height:0.88rem;
+    align-items:center;
+}
+.form-row-label{
+    width:1.8rem;
+    font-size:26rpx;
+    margin-right:0.1rem;
+    text-align:left;
+    color:#494949;
+}
+.message-authentication{
+    color: #FF4B0C;
+    width: 104rpx;
+    font-size:26rpx;
+}
+.fresh{
+    background-position: center;
+    background-image: url(../../image/fresh.png);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    width: 40rpx;
+    height: 32rpx;
+}
+.form-row-content{
+    -webkit-box-flex:1;
+    flex:1 1 0%;
+    font-size:0.34rem;
+}
+
+.form-row-content input{
+    font-size:26rpx;
+    color:#A5A5A5;
+}
+
+.page-section-btns{
+    display:flex;
+    justify-content:space-around;
+    -webkit-box-align:center;
+    align-items:center;
+    margin-top: 76rpx;
+}
+
+.page-section-btns button{
+    width: 550rpx;
+    height: 80rpx;
+    background-color: #FF4B0C;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    border-radius: 40rpx;
+    color: #fff;
+    
+}

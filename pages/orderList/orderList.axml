@@ -1,0 +1,66 @@
+<view class="order">
+  <tabs
+    tabs="{{tabs}}"
+    showPlus="{{false}}"
+    onTabClick="handleTabClick"
+    onChange="handleTabChange"
+    activeTab="{{activeTab}}"
+  >
+    <block a:for="{{tabs}}">
+      <tab-content key="{{index}}">
+        <view class="tab-content">
+          <view a:if="{{false}}" class="nothing">
+            <view class="nothing-Img">
+              <image mode="scaleToFill" src="../../image/nothing.png"/>
+            </view>
+            <view class="nothing-title">
+              目前暂无订单
+            </view>
+            <view class="toShopping">去选好物</view>
+          </view>
+
+          <scroll-view a:if="{{true}}" class="content-scroll" scroll-y="{{true}}">
+            <block a:for="{{item.list}}">
+            <view class="every-content">
+              <view class="content-top" onTap="toOrderDetail">
+                <view class="top-left">
+                  <image mode="scaleToFill" src="{{item.companyLogo}}"/>
+                  <view class="top-left-title">{{item.company}}</view>
+                  <view class="top-left-autor">{{item.autor}}</view>
+                </view>
+                <view class="top-right">
+                  已发货
+                </view>
+              </view>
+              <view class="content-middle" onTap="toOrderDetail">
+                <image mode="scaleToFill" src="{{item.goodsImg}}"/>
+                <view class="middle-right">
+                  <view class="middle-right-title">
+                    {{item.goodsTitle}}
+                  </view>
+                  <view class="middle-right-dec">
+                    {{item.goodsDec}}
+                  </view>
+                  <view class="middle-right-price">
+                    <text class="priceType">￥</text>{{item.price}}
+                  </view>
+                </view>
+              </view>
+              <view class="all-price">
+                <view class="price-content">
+                  共{{item.num}}件商品 合计：￥<text class="priceAll">{{item.allPrice}}</text>
+                </view>
+              </view>
+              <view class="content-bottom">
+                <view class="link-btn">联系卖家</view>
+                <view class="middle-btn" onTap="toSteps">查看物流</view>
+                <view class="last-btn" onTap="toComment">确认收货</view>
+              </view>
+            </view>
+            </block>
+          </scroll-view>
+        </view>
+      </tab-content>
+    </block>
+  </tabs>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "am-icon": "mini-antui/es/am-icon/index",
+    "popup": "mini-antui/es/popup/index",
+    "goods-item":"/components/goods-item/goods-item"
+  }
+}

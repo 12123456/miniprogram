@@ -1,0 +1,76 @@
+.top {
+  font-size: 30rpx;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  color: #737373;
+}
+
+.top-left {
+  display: flex;
+}
+
+.top-left image {
+  width: 20rpx;
+  height: 20rpx;
+  margin: auto 10rpx;
+}
+
+.billList {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30rpx 20rpx;
+}
+
+.bill-every {
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #e6e6e6;
+  padding: 30rpx 0;
+}
+
+.bill-left {
+  display: flex;
+}
+
+.bill-left image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.bill-content {
+  margin-left: 20rpx;
+  height: 80rpx;
+}
+
+.bill-content-top {
+  width: 250rpx;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.bill-content-time {
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #737373;
+  display: flex;
+  font-size: 27rpx;
+}
+
+.bill-content-time-right {
+  margin-left: 15rpx;
+}
+
+.tips {
+  text-align: center;
+  margin-top: 50rpx;
+  color: #e6e6e6;
+  font-size: 25rpx;
+}

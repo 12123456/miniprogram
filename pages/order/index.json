@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "确认订单",
+  "usingComponents": {
+    "am-icon": "mini-ali-ui/es/am-icon/index"
+  }
+}

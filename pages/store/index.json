@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "店铺",
+  "usingComponents": {
+    "goods-item":"/components/goods-item/goods-item"
+  }
+}

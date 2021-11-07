@@ -1,0 +1,72 @@
+<view class="page-tips">
+  <image mode="scaleToFill" src="/image/order/icon12.png"/>
+  <text class="tips-txt">您的还款日还有38天，请注意还款时间，以免逾期</text>
+  <image mode="scaleToFill" src="/image/order/close.png" class="close"/>
+</view>
+<view class="product">
+  <view class="goodsMes">
+    <image mode="scaleToFill" src="/image/order/shop-img.png"></image>
+    <view class="goodsMes-right">
+      <view class="goodsMes-title">小米笔记本 Pro 15 OLED 锐龙版 R7 16G 512G 灰色 灰色小米笔记本 Pro 15 OLED 锐龙版 R7 16G 512G 灰色 灰色小米笔记本 Pro 15 OLED 锐龙版 R7 16G 512G 灰色 灰色小米笔记本 Pro 15 OLED 锐龙版 R7 16G 512G 灰色 灰色</view>
+      <view class="specification">规格：黑色/i5-5300U/8G/256G固态/集显</view>
+      <view class="goodsMes-price">总租金:￥90</view>
+      <view class="free-deposit">芝麻信用-免押金</view>
+    </view>
+  </view>
+  <view class="staging-info">
+    <view class="info-item">
+      <text>620.50</text>
+      <text>应还租金(元)</text>
+    </view>
+    <view class="info-item">
+      <text>51.80</text>
+      <text>已还租金(元)</text>
+    </view>
+    <view class="info-item">
+      <text>568.70</text>
+      <text>未还租金(元)</text>
+    </view>
+  </view>
+</view>
+<view class="list-title">可提前归还本金</view>
+<view class="list">
+  <view class="list-item" a:for="{{6}}">
+    <image mode="scaleToFill" src="/image//order/icon13.png"/>
+    <view class="right-boxs">
+      <view class="right-row">
+        <view class="txt-1">2/12期</view>
+        <text class="txt-2">待还款</text>
+      </view>
+      <view class="right-row">
+        <view class="txt-3">
+          <text>￥</text>51.70</view>
+        <text class="txt-4">还款时间:2021年06月01日</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="list-title">已还本金</view>
+<view class="list">
+  <view class="list-item" a:for="{{6}}">
+    <image mode="scaleToFill" src="/image//order/icon14.png"/>
+    <view class="right-boxs">
+      <view class="right-row">
+        <view class="txt-1">2/12期</view>
+        <text class="txt-2">待还款</text>
+      </view>
+      <view class="right-row">
+        <view class="txt-3">
+          <text>￥</text>51.70</view>
+        <text class="txt-4">还款时间:2021年06月01日</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="page-fixed">
+  <view class="pay-price">
+    总计
+    <view>￥
+      <text>51.</text>00</view>
+  </view>
+  <text class="pay-btn">去支付</text>
+</view>

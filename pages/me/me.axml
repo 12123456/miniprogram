@@ -1,0 +1,202 @@
+<view class="page">
+  <view class="top">
+    <view class="top-up">
+      <view class="top-right" onTap="login">
+        <image mode="scaleToFill" src="{{photoUrl}}"/>
+      </view>
+      <view class="top-left" onTap="login">
+        <view class="userId">{{userName}}</view>
+      </view>
+    </view>
+    <!-- <view class="top-down">
+      <view class="equipment">
+        <view class="equipmentName">在租设备</view>
+        <view class="equipmentNum">0</view>
+      </view>
+      <view class="totalAmount">
+        <view class="totalAmountName">总额度</view>
+        <view class="totalNum">0</view>
+      </view>
+    </view> -->
+  </view>
+  <view class="toAddress" onTap="toAddress">
+    <view>收货地址</view>
+    <am-icon class="toAddressIcon" type="arrow-right" size='10' />
+  </view>
+
+  <view class="middle">
+    <view class="middle-up">
+      <view class="orderAll" data-status="0" onTap="toOrder">
+        <view class="control-m-Img">
+          <image mode="scaleToFill" src="../../image/orderAll.png"/>
+        </view>
+        <view class="orderAllName">全部订单</view>
+      </view>
+      <view class="waitCollection" data-status="1" onTap="toOrder">
+        <view class="control-m-Img">
+          <image mode="scaleToFill" src="../../image/waitCollection.png"/>
+        </view>
+        <view class="waitCollectionName">待收款</view>
+      </view>
+      <view class="waitSend" data-status="2" onTap="toOrder">
+        <view class="control-m-Img">
+          <image mode="scaleToFill" src="../../image/waitSend.png"/>
+        </view>
+        <view class="waitSendName">待发货</view>
+      </view>
+      <view class="waitReceive" data-status="3" onTap="toOrder">
+        <view class="control-m-Img">
+          <image mode="scaleToFill" src="../../image/waitReceive.png"/>
+        </view>
+        <view class="waitReceiveName">待收货</view>
+      </view>
+    </view>
+    <view class="middle-down" data-status="4" onTap="toOrder">
+      <view class="using">
+        <view class="control-m-Img">
+          <image mode="scaleToFill" src="../../image/using.png"/>
+        </view>
+        <view class="usingName">使用中</view>
+      </view>
+      <view class="successed" data-status="5" onTap="toOrder">
+        <view class="control-m-Img">
+          <image mode="scaleToFill" src="../../image/successed.png"/>
+        </view>
+        <view class="successedName">已完成</view>
+      </view>
+      <view class="overdue" data-status="6" onTap="toOrder">
+        <view class="control-m-Img">
+          <image mode="scaleToFill" src="../../image/overdue.png"/>
+        </view>
+        <view class="overdueName">已逾期</view>
+      </view>
+      <view class="returnGoods" data-status="7" onTap="toOrder">
+        <view class="control-m-Img">
+          <image mode="scaleToFill" src="../../image/returnGoods.png"/>
+        </view>
+        <view class="returnGoodsName">退换货</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class="me-step">
+    <view class="step-top">
+      <view class="step-top-left">
+        最新物流
+      </view>
+      <view class="step-top-time">
+        08:35
+      </view>
+    </view>
+    <view class="step-content">
+      <image mode="scaleToFill" src="../../image/test01.png"/>
+      <view class="step-content-right">
+        <view class="step-content-top">【{{status}}】</view>
+        <view class="step-content-bottom">郑州运输中心发往北京，测试文字测试文字测试文字</view>
+      </view>
+    </view>
+  </view> -->
+
+  <view class="me-ad" onTap="toSettled">
+    <image mode="scaleToFill" src="../../image/me_AD.png"/>
+  </view>
+
+  <view class="bottom">
+    <view class="bottom-up">
+      <view class="coupon" onTap="toRealNameAuthen">
+        <view class="control-b-Img">
+          <image mode="scaleToFill" src="../../image/electronicContract.png"/>
+        </view>
+        <view class="realName">实名认证</view>
+      </view>
+      <view class="reneval" onTap="toIDInfor">
+        <view class="control-b-Img">
+          <image mode="scaleToFill" src="../../image/idInfor.png"/>
+        </view>
+        <view class="idInfor">身份信息</view>
+      </view>
+      <view class="bill" onTap="toBill">
+        <view class="control-b-Img">
+          <image mode="scaleToFill" src="../../image/bill.png"/>
+        </view>
+        <view class="billName">账单</view>
+      </view>
+    </view>
+    <view class="bottom-middle">
+      <view class="electronicContract" onTap="toCoupon">
+        <view class="control-b-Img">
+          <image mode="scaleToFill" src="../../image/coupon.png"/>
+        </view>
+        <view class="electronicContractName">优惠券</view>
+      </view>
+      <view class="invoice">
+        <view class="control-b-Img">
+          <image mode="scaleToFill" src="../../image/reneval.png"/>
+        </view>
+        <view class="invoiceName">续租</view>
+      </view>
+      <view class="buyOut" onTap="toBuyOut">
+        <view class="control-b-Img">
+          <image mode="scaleToFill" src="../../image/buyOut.png"/>
+        </view>
+        <view class="buyOutName">买断</view>
+      </view>
+    </view>
+    <view class="bottom-bottom">
+      <view class="helpCenter" onTap="toHelp">
+        <view class="control-b-Img">
+          <image mode="scaleToFill" src="../../image/helpCenter.png"/>
+        </view>
+        <view class="helpCenterName">帮助中心</view>
+      </view>
+      <view class="feedBack" onTap="toFeedback">
+        <view class="control-b-Img">
+          <image mode="scaleToFill" src="../../image/feedBack.png"/>
+        </view>
+        <view class="feedBackName">意见反馈</view>
+      </view>
+      <view class="customerService" onTap="showService">
+        <view class="control-b-Img">
+          <image mode="scaleToFill" src="../../image/customerService.png"/>
+        </view>
+        <view class="customerServiceName">在线客服</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="good-grid">
+    <view class="h">
+      <view style="display:flex;flex-direction:row;">
+        <image mode="scaleToFill" class="leftStar" src="../../image/leftStar.png"/>
+        <text class="text">为您推荐</text>
+        <image mode="scaleToFill" class="rightStar" src="../../image/rightStar.png"/>
+      </view>
+    </view>
+    <view class="b">
+      <block a:for="{{goodsList}}" a:for-index="iindex" a:for-item="iitem" a:key="{{iitem.id}}">
+        <navigator url="../goods/goods?id={{iitem.id}}" class="item">
+          <image class="img" src="{{iitem.image_url}}" background-size="cover"></image>
+          <view class="description">{{iitem.description}}</view>
+          <view style="display:flex;flex-direction:row;margin-bottom:10rpx;padding: 0 10rpx;font-size:28rpx;color:#979797 ">
+            <view class="extend" style="margin-right: 10rpx;">{{iitem.extend}}</view> |
+            <view class="rentStart"  style="margin-left: 10rpx;">{{iitem.rentStart}}</view>
+          </view>
+          <view class="price">{{iitem.price}}/天</view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+
+  <modal show="{{modalServiceOpened}}" showClose="{{false}}" className="modalService"> 
+    <view class="modal-service-title">
+      联系客服
+    </view>
+    <view class="modal-service-tel">
+      平台客服：<text class="color-blue">13393356984</text>
+    </view>
+    <view class="modal-service-time">
+      工作时间：10:30-19:30
+    </view>
+    <view class="close-btn" onTap="showService">取消拨打</view>
+	</modal>
+</view>

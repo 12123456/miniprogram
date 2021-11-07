@@ -1,0 +1,62 @@
+<view class="return-address">
+  <view class="row">
+    <text>归还地址</text>
+  </view>
+  <view class="row">
+    <am-icon type="check_" color="rgb(254,51, 73)" size="15"></am-icon>
+    <view class="right">
+      <view class="address-info">
+        <view class="address-userinfo">
+          <text>洪克</text>
+          <text>13391968682</text>
+        </view>
+        <view class="address-name">北京 北京市 海定区 肖家河敬老院库房</view>
+      </view>
+      <text class="copy-txt">复制</text>
+    </view>
+  </view>
+  <view class="row">
+    <text class="title">推荐寄件</text>
+    <view class="right-list">
+      <text>顺丰速运</text>
+      <text>菜鸟裹裹</text>
+    </view>
+  </view>
+</view>
+<view class="logistics-info">
+  <view class="logistics-row">
+    <text class="row-label">物流单号</text>
+    <input class="right-box" placeholder-class="placeholder-input" placeholder="请填写快递单号" />
+  </view>
+  <view class="logistics-row">
+    <text class="row-label">快递公司</text>
+    <input class="right-box" placeholder-class="placeholder-input" placeholder="请选择快递公司" />
+  </view>
+  <view class="logistics-row">
+    <text class="row-label">归还备注</text>
+  </view>
+  <view class="textarea-row">
+    <textarea placeholder-class="placeholder-textarea" placeholder="请写下您想要商家看到的~" />
+  </view>
+  <view class="logistics-row ">
+    <text class="row-label fs32">归还凭证
+      <text>（上传后可修改，不可撤销）</text>
+    </text>
+  </view>
+  <view class="picture-content">
+    <view class="FileList-item" a:for="{{FileList}}" a:key="index">
+      <image mode="scaleToFill" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2819709235,2100455286&fm=26&gp=0.jpg"/>
+    </view>
+    <view class="img-box" a:if="{{FileList.length<9}}" onTap="openCamera">
+      <image mode="scaleToFill" src="/image/order/icon10.png"/>
+      <text>上传凭证（最多9张）</text>
+    </view>
+  </view>
+</view>
+<view class="return-tips">
+1.以商家提供的实际租用清单为准，归还物品不完整会影响归还
+进度。商家收到货物后会提供结算单，请及时确认结算单。
+</view>
+<view class="submit-btn">
+  <text>提交</text>
+</view>

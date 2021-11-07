@@ -1,0 +1,33 @@
+<view class="search">
+  <view class="top">
+    <search-bar
+    value="{{value}}"
+    onInput="handleInput"
+    onClear="handleClear"
+    placeholder="搜索你想要的商品"
+    onCancel="handleCancel"
+    onSubmit="handleSubmit"
+    onBlur="handleBlur"
+    showCancelButton="{{true}}" />
+  </view>
+  <view class="hot">
+    <view class="hot-title">搜索发现</view>
+    <view class="hot-content">
+      <block a:for="{{hotList}}">
+        <view class="hot-every">
+          {{item}}
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="history">
+    <view class="history-title">搜索历史</view>
+    <view class="history-content">
+      <block a:for="{{historyList}}">
+        <view class="history-every">
+          {{item}}
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

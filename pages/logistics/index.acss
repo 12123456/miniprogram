@@ -1,0 +1,92 @@
+.top {
+  font-size: 25rpx;
+  display: flex;
+  padding: 30rpx;
+  background-color: #fff;
+}
+
+.goods-img {
+  height: 200rpx;
+  width: 230rpx;
+}
+
+.goods-img image{
+  width: 100%;
+  height: 100%;
+}
+
+.top-right {
+  margin-left: 20rpx;
+  height: 200rpx;
+}
+
+.status {
+  display: flex;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.top-right-title {
+  width: 125rpx;
+}
+
+.code-content {
+  display: flex;
+  justify-content: space-between;
+  width: 335rpx;
+}
+
+.copy-btn {
+  border: 1rpx solid #737373;
+  border-radius: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin: auto 0;
+  width: 70rpx;
+  text-align: center;
+}
+
+.middle {
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+}
+
+.stepsAll {
+  margin-top: 30rpx;
+}
+
+.stepsTmp {
+  font-size: 25rpx;
+}
+
+.am-vertical-step-line{
+  background-color: rgb(204, 204, 204)!important;
+}
+
+.am-vertical-step-title, .am-vertical-step-description {
+  font-size: 25rpx!important;
+}
+
+.am-vertical-steps {
+  padding: 0!important;
+}
+
+.am-vertical-step-title {
+  color: black!important;
+}
+
+.bottom {
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+  font-size: 25rpx;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-blue {
+  color: rgb(16, 142, 233);
+}

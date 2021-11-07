@@ -1,0 +1,15 @@
+<view class="register">
+
+  <view class="form">
+    <view class="form-item">
+        <input placeholder="手机号码" class="mobile" type="number" onInput="setMobile" onBlur="inputOnblur"/>
+    </view>
+    <view class="form-item">
+        <input placeholder="短信验证码" class="smsCode" type="number" onInput="setSmsCode" onBlur="inputOnblur"/>
+  <button class="getSmsCode" size="mini" type="primary" onTap="getSmsCode">获取短信验证码</button>
+    </view>
+  </view>
+  
+  <button class="register" onTap="register">注册</button>
+
+</view>

@@ -1,0 +1,38 @@
+page {
+  background-color: #fff;
+}
+
+.contentEvery {
+  width: 90%;
+  margin: 10rpx auto 20rpx auto;
+  padding: 25rpx;
+  box-shadow:0px 0px 6px #919191;
+  border-radius: 20rpx;
+}
+
+.title {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 25rpx;
+  margin-top: 20rpx;
+}
+
+.bottom {
+  color: red;
+  width: 90%;
+  margin: 20rpx auto 40rpx auto;
+  font-size: 30rpx;
+}
+
+.bottom-btn {
+  background-color: rgb(16, 142, 233);
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+}
